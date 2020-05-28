@@ -1,0 +1,6 @@
+2020/05/28 09:16:48 [error] 6#6: *1 open() "/var/www/hello.dev/nasa" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /nasa HTTP/1.1", host: "itea.wallet"
+2020/05/28 09:16:48 [error] 6#6: *1 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "itea.wallet", referrer: "http://itea.wallet/nasa"
+2020/05/28 09:27:23 [error] 6#6: *10 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2020/05/28 09:31:07 [error] 6#6: *11 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2020/05/28 09:48:15 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/hello.dev.conf:14
+2020/05/28 09:49:24 [error] 6#6: *1 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "itea.curs", referrer: "http://itea.curs/"
