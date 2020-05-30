@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background: hsl(210, 14%, 95%);
+  background: linear-gradient(to right, rgb(250, 251, 253), rgb(192, 219, 236));
+}

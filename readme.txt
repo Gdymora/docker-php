@@ -31,3 +31,10 @@ Laravel
 Устанавливаем права доступа на каталоги, для которых необходимы права на запись:
 
 sudo chgrp -R www-data storage bootstrap/cache; sudo chmod -R ug+rwx storage bootstrap/cache
+после
+
+php artisan route:clear
+
+php artisan config:clear
+
+php artisan cache:clear
