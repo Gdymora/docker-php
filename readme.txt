@@ -1,3 +1,27 @@
+Установка
+
+Установка compose
+sudo snap install docker          # version 18.06.1-ce, or
+sudo apt  install docker-compose  # version 1.25.0-1
+
+Добавить пользователя в группу
+sudo usermod -aG docker ${USER}
+
+Запускать: service start docker
+
+запускать из каталога где находится docker-compose.yml
+перед запуском остановить nginx mysql:
+
+sudo service mysql stop
+sudo service nginx stop
+
+Команды
+
+пересобрать контейнер docker-compose build
+
+запустить как демона docker-compose up -d
+остановить docker-compose down
+
 phpmyadmin
 http://local:8090/
 http://localhost:8090/
