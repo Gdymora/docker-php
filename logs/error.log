@@ -1,16 +1,184 @@
-2020/05/28 09:16:48 [error] 6#6: *1 open() "/var/www/hello.dev/nasa" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /nasa HTTP/1.1", host: "itea.wallet"
-2020/05/28 09:16:48 [error] 6#6: *1 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "itea.wallet", referrer: "http://itea.wallet/nasa"
-2020/05/28 09:27:23 [error] 6#6: *10 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2020/05/28 09:31:07 [error] 6#6: *11 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2020/05/28 09:48:15 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/hello.dev.conf:14
-2020/05/28 09:49:24 [error] 6#6: *1 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "itea.curs", referrer: "http://itea.curs/"
-2020/05/28 11:20:05 [error] 6#6: *5 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "itea.wallet", referrer: "http://itea.wallet/"
-2020/05/28 11:21:39 [error] 6#6: *10 open() "/var/www/hello.dev/nasa" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /nasa HTTP/1.1", host: "itea.wallet"
-2020/05/30 11:33:40 [error] 6#6: *1 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "itea.curs", referrer: "http://itea.curs/"
-2020/05/30 11:49:58 [error] 6#6: *4 open() "/var/www/hello.dev/зрзьнфвьшт" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /%D0%B7%D1%80%D0%B7%D1%8C%D0%BD%D1%84%D0%B2%D1%8C%D1%88%D1%82 HTTP/1.1", host: "itea.curs"
-2020/05/30 11:50:08 [error] 6#6: *4 open() "/var/www/hello.dev/phpmyadmin" failed (2: No such file or directory), client: 192.168.1.105, server: hello.dev, request: "GET /phpmyadmin HTTP/1.1", host: "itea.curs"
-2020/05/30 11:50:54 [error] 6#6: *10 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "local", referrer: "http://local/index.php"
-2020/05/30 11:56:37 [error] 6#6: *1 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "172.18.0.4", referrer: "http://172.18.0.4/index.php"
-2020/05/30 12:01:53 [error] 7#7: *1 open() "/var/www/hello.dev/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: hello.dev, request: "GET /favicon.ico HTTP/1.1", host: "local:8000", referrer: "http://local:8000/index.php"
-2020/05/30 12:07:54 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/conf.d/itea.curs.conf:14
-2020/05/30 12:14:50 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/conf.d/itea.curs.conf:14
+2023/03/23 10:27:59 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:03 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:05 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:08 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:10 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:13 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:17 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:25 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:28:39 [emerg] 1#1: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/wordpress.conf:15
+2023/03/23 10:29:37 [error] 24#24: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "wordpress.loc", referrer: "http://wordpress.loc/"
+2023/03/23 10:42:40 [warn] 1#1: conflicting server name "wordpress.conf" on 0.0.0.0:80, ignored
+2023/03/23 10:42:40 [warn] 1#1: conflicting server name "www.wordpress.conf" on 0.0.0.0:80, ignored
+2023/03/23 10:42:40 [warn] 1#1: conflicting server name "wordpress.conf" on [::]:80, ignored
+2023/03/23 10:42:40 [warn] 1#1: conflicting server name "www.wordpress.conf" on [::]:80, ignored
+2023/03/23 10:45:55 [notice] 1#1: using the "epoll" event method
+2023/03/23 10:45:55 [notice] 1#1: nginx/1.23.3
+2023/03/23 10:45:55 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/23 10:45:55 [notice] 1#1: OS: Linux 5.19.0-35-generic
+2023/03/23 10:45:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/23 10:45:55 [notice] 1#1: start worker processes
+2023/03/23 10:45:55 [notice] 1#1: start worker process 21
+2023/03/23 10:45:55 [notice] 1#1: start worker process 22
+2023/03/23 10:45:55 [notice] 1#1: start worker process 23
+2023/03/23 10:45:55 [notice] 1#1: start worker process 24
+2023/03/23 10:46:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/23 10:46:18 [notice] 22#22: gracefully shutting down
+2023/03/23 10:46:18 [notice] 24#24: gracefully shutting down
+2023/03/23 10:46:18 [notice] 22#22: exiting
+2023/03/23 10:46:18 [notice] 24#24: exiting
+2023/03/23 10:46:18 [notice] 24#24: exit
+2023/03/23 10:46:18 [notice] 22#22: exit
+2023/03/23 10:46:18 [notice] 21#21: gracefully shutting down
+2023/03/23 10:46:18 [notice] 23#23: gracefully shutting down
+2023/03/23 10:46:18 [notice] 23#23: exiting
+2023/03/23 10:46:18 [notice] 23#23: exit
+2023/03/23 10:46:18 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/03/23 10:46:18 [notice] 1#1: worker process 23 exited with code 0
+2023/03/23 10:46:18 [notice] 1#1: worker process 24 exited with code 0
+2023/03/23 10:46:18 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/23 10:46:18 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/23 10:46:18 [notice] 1#1: worker process 22 exited with code 0
+2023/03/23 10:46:18 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/23 10:46:20 [notice] 21#21: exiting
+2023/03/23 10:46:20 [notice] 21#21: exit
+2023/03/23 10:46:20 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/03/23 10:46:20 [notice] 1#1: worker process 21 exited with code 0
+2023/03/23 10:46:20 [notice] 1#1: exit
+2023/03/23 10:48:13 [notice] 1#1: using the "epoll" event method
+2023/03/23 10:48:13 [notice] 1#1: nginx/1.23.3
+2023/03/23 10:48:13 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/23 10:48:13 [notice] 1#1: OS: Linux 5.19.0-35-generic
+2023/03/23 10:48:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/23 10:48:13 [notice] 1#1: start worker processes
+2023/03/23 10:48:13 [notice] 1#1: start worker process 21
+2023/03/23 10:48:13 [notice] 1#1: start worker process 22
+2023/03/23 10:48:13 [notice] 1#1: start worker process 23
+2023/03/23 10:48:13 [notice] 1#1: start worker process 24
+2023/03/23 10:49:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/23 10:49:13 [notice] 21#21: gracefully shutting down
+2023/03/23 10:49:13 [notice] 22#22: gracefully shutting down
+2023/03/23 10:49:13 [notice] 24#24: gracefully shutting down
+2023/03/23 10:49:13 [notice] 21#21: exiting
+2023/03/23 10:49:13 [notice] 24#24: exiting
+2023/03/23 10:49:13 [notice] 23#23: gracefully shutting down
+2023/03/23 10:49:13 [notice] 24#24: exit
+2023/03/23 10:49:13 [notice] 23#23: exiting
+2023/03/23 10:49:13 [notice] 21#21: exit
+2023/03/23 10:49:13 [notice] 23#23: exit
+2023/03/23 10:49:13 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/03/23 10:49:13 [notice] 1#1: worker process 21 exited with code 0
+2023/03/23 10:49:13 [notice] 1#1: worker process 23 exited with code 0
+2023/03/23 10:49:13 [notice] 1#1: worker process 24 exited with code 0
+2023/03/23 10:49:13 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/23 10:49:13 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/03/23 10:49:14 [notice] 22#22: exiting
+2023/03/23 10:49:14 [notice] 22#22: exit
+2023/03/23 10:49:14 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/23 10:49:14 [notice] 1#1: worker process 22 exited with code 0
+2023/03/23 10:49:14 [notice] 1#1: exit
+2023/03/23 10:49:28 [notice] 1#1: using the "epoll" event method
+2023/03/23 10:49:28 [notice] 1#1: nginx/1.23.3
+2023/03/23 10:49:28 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/23 10:49:28 [notice] 1#1: OS: Linux 5.19.0-35-generic
+2023/03/23 10:49:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/23 10:49:28 [notice] 1#1: start worker processes
+2023/03/23 10:49:28 [notice] 1#1: start worker process 20
+2023/03/23 10:49:28 [notice] 1#1: start worker process 21
+2023/03/23 10:49:28 [notice] 1#1: start worker process 22
+2023/03/23 10:49:28 [notice] 1#1: start worker process 23
+2023/03/23 10:55:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/23 10:55:36 [notice] 22#22: gracefully shutting down
+2023/03/23 10:55:36 [notice] 20#20: gracefully shutting down
+2023/03/23 10:55:36 [notice] 22#22: exiting
+2023/03/23 10:55:36 [notice] 20#20: exiting
+2023/03/23 10:55:36 [notice] 21#21: gracefully shutting down
+2023/03/23 10:55:36 [notice] 21#21: exiting
+2023/03/23 10:55:36 [notice] 22#22: exit
+2023/03/23 10:55:36 [notice] 20#20: exit
+2023/03/23 10:55:36 [notice] 21#21: exit
+2023/03/23 10:55:36 [notice] 23#23: gracefully shutting down
+2023/03/23 10:55:36 [notice] 23#23: exiting
+2023/03/23 10:55:36 [notice] 23#23: exit
+2023/03/23 10:55:37 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/03/23 10:55:37 [notice] 1#1: worker process 21 exited with code 0
+2023/03/23 10:55:37 [notice] 1#1: worker process 22 exited with code 0
+2023/03/23 10:55:37 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/23 10:55:37 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/03/23 10:55:37 [notice] 1#1: worker process 20 exited with code 0
+2023/03/23 10:55:37 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/23 10:55:37 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/03/23 10:55:37 [notice] 1#1: worker process 23 exited with code 0
+2023/03/23 10:55:37 [notice] 1#1: exit
+2023/03/23 10:56:14 [notice] 1#1: using the "epoll" event method
+2023/03/23 10:56:14 [notice] 1#1: nginx/1.23.3
+2023/03/23 10:56:14 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/23 10:56:14 [notice] 1#1: OS: Linux 5.19.0-35-generic
+2023/03/23 10:56:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/23 10:56:14 [notice] 1#1: start worker processes
+2023/03/23 10:56:14 [notice] 1#1: start worker process 21
+2023/03/23 10:56:14 [notice] 1#1: start worker process 22
+2023/03/23 10:56:14 [notice] 1#1: start worker process 23
+2023/03/23 10:56:14 [notice] 1#1: start worker process 24
+2023/03/23 11:15:00 [error] 21#21: *37 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', '.?=9`;z80pR=d:Q2Sl9^PNT0^uTi$FEshK+Nv7fe/r~}:2u]O)n5~z=ZUfRFbM1+', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_optionPHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'fPO97,D%6f)UU?%19Izj8m&eE0F6#f&R;ZRt?`6~^CtU7|e#^%f1{.;}_9kEpgX|', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option" while reading response header from upstream, client: 172.21.0.1, server: wordpress.loc, request: "GET /wp-admin/install.php HTTP/1.1", upstream: "fastcgi://172.21.0.4:9000", host: "wordpress.loc"
+2023/03/23 11:24:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/23 11:24:44 [notice] 23#23: gracefully shutting down
+2023/03/23 11:24:44 [notice] 24#24: gracefully shutting down
+2023/03/23 11:24:44 [notice] 22#22: gracefully shutting down
+2023/03/23 11:24:44 [notice] 23#23: exiting
+2023/03/23 11:24:44 [notice] 24#24: exiting
+2023/03/23 11:24:44 [notice] 23#23: exit
+2023/03/23 11:24:44 [notice] 22#22: exiting
+2023/03/23 11:24:44 [notice] 22#22: exit
+2023/03/23 11:24:44 [notice] 24#24: exit
+2023/03/23 11:24:44 [notice] 21#21: gracefully shutting down
+2023/03/23 11:24:44 [notice] 21#21: exiting
+2023/03/23 11:24:44 [notice] 21#21: exit
+2023/03/23 11:24:44 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/03/23 11:24:44 [notice] 1#1: worker process 22 exited with code 0
+2023/03/23 11:24:44 [notice] 1#1: worker process 23 exited with code 0
+2023/03/23 11:24:44 [notice] 1#1: worker process 24 exited with code 0
+2023/03/23 11:24:44 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/23 11:24:44 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/03/23 11:24:44 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/03/23 11:24:44 [notice] 1#1: worker process 21 exited with code 0
+2023/03/23 11:24:44 [notice] 1#1: exit
+2023/04/05 12:49:02 [notice] 1#1: using the "epoll" event method
+2023/04/05 12:49:02 [notice] 1#1: nginx/1.23.3
+2023/04/05 12:49:02 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/05 12:49:02 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/05 12:49:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/05 12:49:02 [notice] 1#1: start worker processes
+2023/04/05 12:49:02 [notice] 1#1: start worker process 20
+2023/04/05 12:49:02 [notice] 1#1: start worker process 21
+2023/04/05 12:49:02 [notice] 1#1: start worker process 22
+2023/04/05 12:49:02 [notice] 1#1: start worker process 23
+2023/04/05 13:08:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/05 13:08:50 [notice] 21#21: gracefully shutting down
+2023/04/05 13:08:50 [notice] 22#22: gracefully shutting down
+2023/04/05 13:08:50 [notice] 21#21: exiting
+2023/04/05 13:08:50 [notice] 20#20: gracefully shutting down
+2023/04/05 13:08:50 [notice] 22#22: exiting
+2023/04/05 13:08:50 [notice] 21#21: exit
+2023/04/05 13:08:50 [notice] 22#22: exit
+2023/04/05 13:08:50 [notice] 20#20: exiting
+2023/04/05 13:08:50 [notice] 20#20: exit
+2023/04/05 13:08:50 [notice] 23#23: gracefully shutting down
+2023/04/05 13:08:50 [notice] 23#23: exiting
+2023/04/05 13:08:50 [notice] 23#23: exit
+2023/04/05 13:08:50 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/05 13:08:50 [notice] 1#1: worker process 20 exited with code 0
+2023/04/05 13:08:50 [notice] 1#1: worker process 21 exited with code 0
+2023/04/05 13:08:50 [notice] 1#1: worker process 22 exited with code 0
+2023/04/05 13:08:50 [notice] 1#1: worker process 23 exited with code 0
+2023/04/05 13:08:50 [notice] 1#1: exit
+2023/04/05 13:09:25 [notice] 1#1: using the "epoll" event method
+2023/04/05 13:09:25 [notice] 1#1: nginx/1.23.3
+2023/04/05 13:09:25 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/05 13:09:25 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/05 13:09:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/05 13:09:25 [notice] 1#1: start worker processes
+2023/04/05 13:09:25 [notice] 1#1: start worker process 19
+2023/04/05 13:09:25 [notice] 1#1: start worker process 20
+2023/04/05 13:09:25 [notice] 1#1: start worker process 21
+2023/04/05 13:09:25 [notice] 1#1: start worker process 22

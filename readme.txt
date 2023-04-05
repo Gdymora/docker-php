@@ -38,3 +38,13 @@ php artisan route:clear
 php artisan config:clear
 
 php artisan cache:clear
+
+
+#
+sudo ln -s /conf/nginx/sites-available/your_domain /conf/nginx/sites-enabled/
+
+Примітка: Nginx використовує загальну практику під назвою символічні посилання, 
+або символічні посилання, щоб відстежувати, які блоки вашого сервера ввімкнено.
+ Створення символічного посилання подібне до створення ярлика на диску, щоб пізніше 
+ви могли видалити ярлик із каталогу, 
+sites-enabled зберігаючи блок сервера, sites-available якщо хочете його ввімкнути.
