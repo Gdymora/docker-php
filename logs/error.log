@@ -182,3 +182,378 @@
 2023/04/05 13:09:25 [notice] 1#1: start worker process 20
 2023/04/05 13:09:25 [notice] 1#1: start worker process 21
 2023/04/05 13:09:25 [notice] 1#1: start worker process 22
+2023/04/05 14:56:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/05 14:56:26 [notice] 20#20: gracefully shutting down
+2023/04/05 14:56:26 [notice] 21#21: gracefully shutting down
+2023/04/05 14:56:26 [notice] 19#19: gracefully shutting down
+2023/04/05 14:56:26 [notice] 20#20: exiting
+2023/04/05 14:56:26 [notice] 21#21: exiting
+2023/04/05 14:56:26 [notice] 19#19: exiting
+2023/04/05 14:56:26 [notice] 20#20: exit
+2023/04/05 14:56:26 [notice] 21#21: exit
+2023/04/05 14:56:26 [notice] 19#19: exit
+2023/04/05 14:56:26 [notice] 22#22: gracefully shutting down
+2023/04/05 14:56:26 [notice] 22#22: exiting
+2023/04/05 14:56:26 [notice] 22#22: exit
+2023/04/05 14:56:26 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/04/05 14:56:26 [notice] 1#1: worker process 19 exited with code 0
+2023/04/05 14:56:26 [notice] 1#1: worker process 21 exited with code 0
+2023/04/05 14:56:26 [notice] 1#1: worker process 22 exited with code 0
+2023/04/05 14:56:26 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/05 14:56:26 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/05 14:56:26 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/05 14:56:26 [notice] 1#1: worker process 20 exited with code 0
+2023/04/05 14:56:26 [notice] 1#1: exit
+2023/04/05 14:59:26 [notice] 1#1: using the "epoll" event method
+2023/04/05 14:59:26 [notice] 1#1: nginx/1.23.3
+2023/04/05 14:59:26 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/05 14:59:26 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/05 14:59:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/05 14:59:26 [notice] 1#1: start worker processes
+2023/04/05 14:59:26 [notice] 1#1: start worker process 20
+2023/04/05 14:59:26 [notice] 1#1: start worker process 21
+2023/04/05 14:59:26 [notice] 1#1: start worker process 22
+2023/04/05 14:59:26 [notice] 1#1: start worker process 23
+2023/04/05 14:59:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/05 14:59:29 [notice] 20#20: gracefully shutting down
+2023/04/05 14:59:29 [notice] 22#22: gracefully shutting down
+2023/04/05 14:59:29 [notice] 23#23: gracefully shutting down
+2023/04/05 14:59:29 [notice] 20#20: exiting
+2023/04/05 14:59:29 [notice] 22#22: exiting
+2023/04/05 14:59:29 [notice] 23#23: exiting
+2023/04/05 14:59:29 [notice] 22#22: exit
+2023/04/05 14:59:29 [notice] 23#23: exit
+2023/04/05 14:59:29 [notice] 20#20: exit
+2023/04/05 14:59:29 [notice] 21#21: gracefully shutting down
+2023/04/05 14:59:29 [notice] 21#21: exiting
+2023/04/05 14:59:29 [notice] 21#21: exit
+2023/04/05 14:59:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/05 14:59:29 [notice] 1#1: worker process 21 exited with code 0
+2023/04/05 14:59:29 [notice] 1#1: worker process 22 exited with code 0
+2023/04/05 14:59:29 [notice] 1#1: worker process 23 exited with code 0
+2023/04/05 14:59:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/05 14:59:29 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/05 14:59:29 [notice] 1#1: worker process 20 exited with code 0
+2023/04/05 14:59:29 [notice] 1#1: exit
+2023/04/06 06:40:20 [notice] 1#1: using the "epoll" event method
+2023/04/06 06:40:20 [notice] 1#1: nginx/1.23.3
+2023/04/06 06:40:20 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/06 06:40:20 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/06 06:40:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/06 06:40:20 [notice] 1#1: start worker processes
+2023/04/06 06:40:20 [notice] 1#1: start worker process 20
+2023/04/06 06:40:20 [notice] 1#1: start worker process 21
+2023/04/06 06:40:20 [notice] 1#1: start worker process 22
+2023/04/06 06:40:20 [notice] 1#1: start worker process 23
+2023/04/06 06:43:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/06 06:43:06 [notice] 20#20: gracefully shutting down
+2023/04/06 06:43:06 [notice] 21#21: gracefully shutting down
+2023/04/06 06:43:06 [notice] 20#20: exiting
+2023/04/06 06:43:06 [notice] 23#23: gracefully shutting down
+2023/04/06 06:43:06 [notice] 22#22: gracefully shutting down
+2023/04/06 06:43:06 [notice] 23#23: exiting
+2023/04/06 06:43:06 [notice] 20#20: exit
+2023/04/06 06:43:06 [notice] 23#23: exit
+2023/04/06 06:43:06 [notice] 22#22: exiting
+2023/04/06 06:43:06 [notice] 22#22: exit
+2023/04/06 06:43:06 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/06 06:43:06 [notice] 1#1: worker process 20 exited with code 0
+2023/04/06 06:43:06 [notice] 1#1: worker process 22 exited with code 0
+2023/04/06 06:43:06 [notice] 1#1: worker process 23 exited with code 0
+2023/04/06 06:43:06 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 06:43:06 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/06 06:43:08 [notice] 21#21: exiting
+2023/04/06 06:43:08 [notice] 21#21: exit
+2023/04/06 06:43:08 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/04/06 06:43:08 [notice] 1#1: worker process 21 exited with code 0
+2023/04/06 06:43:08 [notice] 1#1: exit
+2023/04/06 06:43:37 [notice] 1#1: using the "epoll" event method
+2023/04/06 06:43:37 [notice] 1#1: nginx/1.23.3
+2023/04/06 06:43:37 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/06 06:43:37 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/06 06:43:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/06 06:43:37 [notice] 1#1: start worker processes
+2023/04/06 06:43:37 [notice] 1#1: start worker process 20
+2023/04/06 06:43:37 [notice] 1#1: start worker process 21
+2023/04/06 06:43:37 [notice] 1#1: start worker process 22
+2023/04/06 06:43:37 [notice] 1#1: start worker process 23
+2023/04/06 06:49:00 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/06 06:49:00 [notice] 21#21: gracefully shutting down
+2023/04/06 06:49:00 [notice] 23#23: gracefully shutting down
+2023/04/06 06:49:00 [notice] 23#23: exiting
+2023/04/06 06:49:00 [notice] 21#21: exiting
+2023/04/06 06:49:00 [notice] 23#23: exit
+2023/04/06 06:49:00 [notice] 21#21: exit
+2023/04/06 06:49:00 [notice] 22#22: gracefully shutting down
+2023/04/06 06:49:00 [notice] 22#22: exiting
+2023/04/06 06:49:00 [notice] 20#20: gracefully shutting down
+2023/04/06 06:49:00 [notice] 22#22: exit
+2023/04/06 06:49:00 [notice] 20#20: exiting
+2023/04/06 06:49:00 [notice] 20#20: exit
+2023/04/06 06:49:00 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/04/06 06:49:00 [notice] 1#1: worker process 21 exited with code 0
+2023/04/06 06:49:00 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 06:49:00 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/06 06:49:00 [notice] 1#1: worker process 20 exited with code 0
+2023/04/06 06:49:00 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 06:49:00 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/06 06:49:00 [notice] 1#1: worker process 22 exited with code 0
+2023/04/06 06:49:00 [notice] 1#1: worker process 23 exited with code 0
+2023/04/06 06:49:00 [notice] 1#1: exit
+2023/04/06 06:49:21 [notice] 1#1: using the "epoll" event method
+2023/04/06 06:49:21 [notice] 1#1: nginx/1.23.3
+2023/04/06 06:49:21 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/06 06:49:21 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/06 06:49:21 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/06 06:49:21 [notice] 1#1: start worker processes
+2023/04/06 06:49:21 [notice] 1#1: start worker process 20
+2023/04/06 06:49:21 [notice] 1#1: start worker process 21
+2023/04/06 06:49:21 [notice] 1#1: start worker process 22
+2023/04/06 06:49:21 [notice] 1#1: start worker process 23
+2023/04/06 06:50:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/06 06:50:41 [notice] 20#20: gracefully shutting down
+2023/04/06 06:50:41 [notice] 20#20: exiting
+2023/04/06 06:50:41 [notice] 20#20: exit
+2023/04/06 06:50:41 [notice] 22#22: gracefully shutting down
+2023/04/06 06:50:41 [notice] 22#22: exiting
+2023/04/06 06:50:41 [notice] 22#22: exit
+2023/04/06 06:50:41 [notice] 21#21: gracefully shutting down
+2023/04/06 06:50:41 [notice] 21#21: exiting
+2023/04/06 06:50:41 [notice] 21#21: exit
+2023/04/06 06:50:41 [notice] 23#23: gracefully shutting down
+2023/04/06 06:50:41 [notice] 23#23: exiting
+2023/04/06 06:50:41 [notice] 23#23: exit
+2023/04/06 06:50:41 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/06 06:50:41 [notice] 1#1: worker process 22 exited with code 0
+2023/04/06 06:50:41 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 06:50:41 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/04/06 06:50:41 [notice] 1#1: worker process 21 exited with code 0
+2023/04/06 06:50:41 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 06:50:41 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/04/06 06:50:41 [notice] 1#1: worker process 23 exited with code 0
+2023/04/06 06:50:41 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 06:50:41 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/06 06:50:41 [notice] 1#1: worker process 20 exited with code 0
+2023/04/06 06:50:41 [notice] 1#1: exit
+2023/04/06 06:58:33 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/hell.test.conf:21
+2023/04/06 06:58:38 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/hell.test.conf:21
+2023/04/06 06:58:42 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/hell.test.conf:21
+2023/04/06 06:58:48 [notice] 1#1: using the "epoll" event method
+2023/04/06 06:58:48 [notice] 1#1: nginx/1.23.3
+2023/04/06 06:58:48 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/06 06:58:48 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/06 06:58:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/06 06:58:48 [notice] 1#1: start worker processes
+2023/04/06 06:58:48 [notice] 1#1: start worker process 20
+2023/04/06 06:58:48 [notice] 1#1: start worker process 21
+2023/04/06 06:58:48 [notice] 1#1: start worker process 22
+2023/04/06 06:58:48 [notice] 1#1: start worker process 23
+2023/04/06 06:58:58 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/themes.php HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/customize.php?theme=jdymora&return=http%3A%2F%2Fwordpress.loc%2Fwp-admin%2Fthemes.php"
+2023/04/06 07:08:18 [error] 20#20: *15 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', '/_/1Js2|E^;9y;C5#XFW~Diz84!H?`)&O|8nnhJ8D%9@),@H|HKU%OF,P$CTxf//', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_optionPHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', '%tOf3PVc|DG fDM[|LN/.:jXtfk:]>Jd9cz8vFTfg91Q]=KM>klpiss}mlm}+,j(', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/install.php HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "wordpress.loc"
+2023/04/06 07:14:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/06 07:14:38 [notice] 20#20: gracefully shutting down
+2023/04/06 07:14:38 [notice] 21#21: gracefully shutting down
+2023/04/06 07:14:38 [notice] 23#23: gracefully shutting down
+2023/04/06 07:14:38 [notice] 22#22: gracefully shutting down
+2023/04/06 07:14:38 [notice] 23#23: exiting
+2023/04/06 07:14:38 [notice] 22#22: exiting
+2023/04/06 07:14:38 [notice] 21#21: exiting
+2023/04/06 07:14:38 [notice] 20#20: exiting
+2023/04/06 07:14:38 [notice] 23#23: exit
+2023/04/06 07:14:38 [notice] 22#22: exit
+2023/04/06 07:14:38 [notice] 21#21: exit
+2023/04/06 07:14:38 [notice] 20#20: exit
+2023/04/06 07:14:38 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/04/06 07:14:38 [notice] 1#1: worker process 21 exited with code 0
+2023/04/06 07:14:38 [notice] 1#1: worker process 22 exited with code 0
+2023/04/06 07:14:38 [notice] 1#1: worker process 23 exited with code 0
+2023/04/06 07:14:38 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 07:14:38 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/06 07:14:38 [notice] 1#1: worker process 20 exited with code 0
+2023/04/06 07:14:38 [notice] 1#1: exit
+2023/04/06 11:10:45 [notice] 1#1: using the "epoll" event method
+2023/04/06 11:10:45 [notice] 1#1: nginx/1.23.3
+2023/04/06 11:10:45 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/06 11:10:45 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/06 11:10:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/06 11:10:45 [notice] 1#1: start worker processes
+2023/04/06 11:10:45 [notice] 1#1: start worker process 20
+2023/04/06 11:10:45 [notice] 1#1: start worker process 21
+2023/04/06 11:10:45 [notice] 1#1: start worker process 22
+2023/04/06 11:10:45 [notice] 1#1: start worker process 23
+2023/04/06 15:12:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/06 15:12:59 [notice] 20#20: gracefully shutting down
+2023/04/06 15:12:59 [notice] 23#23: gracefully shutting down
+2023/04/06 15:12:59 [notice] 23#23: exiting
+2023/04/06 15:12:59 [notice] 23#23: exit
+2023/04/06 15:12:59 [notice] 20#20: exiting
+2023/04/06 15:12:59 [notice] 20#20: exit
+2023/04/06 15:12:59 [notice] 21#21: gracefully shutting down
+2023/04/06 15:12:59 [notice] 21#21: exiting
+2023/04/06 15:12:59 [notice] 21#21: exit
+2023/04/06 15:12:59 [notice] 22#22: gracefully shutting down
+2023/04/06 15:12:59 [notice] 22#22: exiting
+2023/04/06 15:12:59 [notice] 22#22: exit
+2023/04/06 15:12:59 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/04/06 15:12:59 [notice] 1#1: worker process 20 exited with code 0
+2023/04/06 15:12:59 [notice] 1#1: worker process 23 exited with code 0
+2023/04/06 15:12:59 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 15:12:59 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/06 15:12:59 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/04/06 15:12:59 [notice] 1#1: worker process 21 exited with code 0
+2023/04/06 15:12:59 [notice] 1#1: worker process 22 exited with code 0
+2023/04/06 15:12:59 [notice] 1#1: exit
+2023/04/10 07:24:57 [notice] 1#1: using the "epoll" event method
+2023/04/10 07:24:57 [notice] 1#1: nginx/1.23.3
+2023/04/10 07:24:57 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/10 07:24:57 [notice] 1#1: OS: Linux 5.19.0-38-generic
+2023/04/10 07:24:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/10 07:24:57 [notice] 1#1: start worker processes
+2023/04/10 07:24:57 [notice] 1#1: start worker process 20
+2023/04/10 07:24:57 [notice] 1#1: start worker process 21
+2023/04/10 07:24:57 [notice] 1#1: start worker process 22
+2023/04/10 07:24:57 [notice] 1#1: start worker process 23
+2023/04/10 16:33:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/10 16:33:25 [notice] 20#20: gracefully shutting down
+2023/04/10 16:33:25 [notice] 21#21: gracefully shutting down
+2023/04/10 16:33:25 [notice] 22#22: gracefully shutting down
+2023/04/10 16:33:25 [notice] 20#20: exiting
+2023/04/10 16:33:25 [notice] 21#21: exiting
+2023/04/10 16:33:25 [notice] 22#22: exiting
+2023/04/10 16:33:25 [notice] 20#20: exit
+2023/04/10 16:33:25 [notice] 21#21: exit
+2023/04/10 16:33:25 [notice] 22#22: exit
+2023/04/10 16:33:25 [notice] 23#23: gracefully shutting down
+2023/04/10 16:33:25 [notice] 23#23: exiting
+2023/04/10 16:33:25 [notice] 23#23: exit
+2023/04/10 16:33:25 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/04/10 16:33:25 [notice] 1#1: worker process 21 exited with code 0
+2023/04/10 16:33:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/10 16:33:25 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/10 16:33:25 [notice] 1#1: worker process 20 exited with code 0
+2023/04/10 16:33:25 [notice] 1#1: worker process 23 exited with code 0
+2023/04/10 16:33:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/10 16:33:25 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/10 16:33:25 [notice] 1#1: worker process 22 exited with code 0
+2023/04/10 16:33:25 [notice] 1#1: exit
+2023/07/10 07:24:36 [notice] 1#1: using the "epoll" event method
+2023/07/10 07:24:36 [notice] 1#1: nginx/1.23.3
+2023/07/10 07:24:36 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/07/10 07:24:36 [notice] 1#1: OS: Linux 5.19.0-46-generic
+2023/07/10 07:24:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/10 07:24:36 [notice] 1#1: start worker processes
+2023/07/10 07:24:36 [notice] 1#1: start worker process 21
+2023/07/10 07:24:36 [notice] 1#1: start worker process 22
+2023/07/10 07:24:36 [notice] 1#1: start worker process 23
+2023/07/10 07:24:36 [notice] 1#1: start worker process 24
+2023/07/10 07:39:28 [error] 24#24: *36 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'sPZ7>~|sg]N8bAk| 7{`? B@llP4|YLZgbMzLeFg<w<UFK/T.I]51s%1,;=w^<<O', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_optionPHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'JzZ;ZL|0eBx#~R)i-1;echaic/boz~2}9Pt5!o7zExe[|>wfoXJ0/gD!Lz%E9W/m', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/install.php HTTP/1.1", upstream: "fastcgi://172.25.0.3:9000", host: "wordpress.loc"
+2023/07/10 10:59:48 [error] 21#21: *2160 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', '(9int1USi0)G/(zhmT4^,  je38{rz)bjfV/og|HGruw]a9tXVZ-z-J`_a_7jpBN', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_optionPHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'LN/ZcyD.VtDKk4fqgtLawf&B !B$2]OgIx`<wLYx0HUp`9$m YaF@Z3RsQx%`k.f', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/install.php HTTP/1.1", upstream: "fastcgi://172.25.0.3:9000", host: "wordpress.loc"
+2023/07/10 10:59:49 [error] 21#21: *2161 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'iS4Pq5EK:dq0+TB4DguWQr+/&-1IDU&wE0Z^-M<qEG:u p<ARC.HATZF&>%6K<Kh', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_optionPHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', '}8Ks;Mm[yh/uIazHsPawS|#<nDp.d6F7:vIp?^vBW=v<tkQ.7atUa+K{O,(#?hbg', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/install.php HTTP/1.1", upstream: "fastcgi://172.25.0.3:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/install.php"
+2023/07/10 10:59:55 [error] 21#21: *2161 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'v/x7_l<sV4~UwSF4Ejv9MqNI!k85Y9@4z-*l6z3p(Weln2H&|)EP-9Qec]Im= HO', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_optionPHP message: WordPress database error Table 'wordpress.loc.wp_options' doesn't exist for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'ro^ltXOY6fx,[ugiC#J3.{>-Hw@Z)}&r:y}AQ@ezM#frX@,4#xB%fTk@qNT^x0@N', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_can_install_language_pack, WP_Upgrader->fs_connect, Automatic_Upgrader_Skin->request_filesystem_credentials, WP_Upgrader_Skin->request_filesystem_credentials, request_filesystem_credentials, wp_nonce_field, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/install.php HTTP/1.1", upstream: "fastcgi://172.25.0.3:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/themes.php"
+2023/07/10 15:21:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/07/10 15:21:42 [notice] 21#21: gracefully shutting down
+2023/07/10 15:21:42 [notice] 24#24: gracefully shutting down
+2023/07/10 15:21:42 [notice] 24#24: exiting
+2023/07/10 15:21:42 [notice] 24#24: exit
+2023/07/10 15:21:42 [notice] 23#23: gracefully shutting down
+2023/07/10 15:21:42 [notice] 21#21: exiting
+2023/07/10 15:21:42 [notice] 23#23: exiting
+2023/07/10 15:21:42 [notice] 21#21: exit
+2023/07/10 15:21:42 [notice] 23#23: exit
+2023/07/10 15:21:42 [notice] 22#22: gracefully shutting down
+2023/07/10 15:21:42 [notice] 22#22: exiting
+2023/07/10 15:21:42 [notice] 22#22: exit
+2023/07/10 15:21:42 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/07/10 15:21:42 [notice] 1#1: worker process 21 exited with code 0
+2023/07/10 15:21:42 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/10 15:21:42 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/07/10 15:21:42 [notice] 1#1: worker process 22 exited with code 0
+2023/07/10 15:21:42 [notice] 1#1: worker process 23 exited with code 0
+2023/07/10 15:21:42 [notice] 1#1: worker process 24 exited with code 0
+2023/07/10 15:21:42 [notice] 1#1: exit
+2023/07/17 06:26:35 [notice] 1#1: using the "epoll" event method
+2023/07/17 06:26:35 [notice] 1#1: nginx/1.23.3
+2023/07/17 06:26:35 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/07/17 06:26:35 [notice] 1#1: OS: Linux 5.19.0-46-generic
+2023/07/17 06:26:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/17 06:26:35 [notice] 1#1: start worker processes
+2023/07/17 06:26:35 [notice] 1#1: start worker process 20
+2023/07/17 06:26:35 [notice] 1#1: start worker process 21
+2023/07/17 06:26:35 [notice] 1#1: start worker process 22
+2023/07/17 06:26:35 [notice] 1#1: start worker process 23
+2023/07/17 10:16:46 [error] 22#22: *753 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_electrik_orders' doesn't exist for query SELECT * FROM wp_electrik_orders made by do_action('toplevel_page_my_order_list'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->my_order_list_page" while reading upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/admin.php?page=my_order_list HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/edit.php?post_type=page"
+2023/07/17 10:19:14 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            ' at line 3 for query CREATE TABLE IF NOT EXISTS wp_electrik_orders (
+            id mediumint(9) NOT NULL AUTO_INCREMENT,
+            name constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            product constchar(255) NOT NULL,
+            PRIMARY KEY  (id)
+        ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_electrik/electrik.php'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->activation, Electrik->create_table, dbDelta" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/plugins.php?action=activate&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s&_wpnonce=db95d83c3e HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?plugin=electrik%2Felectrik.php"
+2023/07/17 10:19:17 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_electrik_orders' doesn't exist for query SELECT * FROM wp_electrik_orders made by do_action('toplevel_page_my_order_list'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->my_order_list_page" while reading upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/admin.php?page=my_order_list HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?charsout=678&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s"
+2023/07/17 10:19:20 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_electrik_orders' doesn't exist for query SELECT * FROM wp_electrik_orders made by do_action('toplevel_page_my_order_list'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->my_order_list_page" while reading upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/admin.php?page=my_order_list HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?charsout=678&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s"
+2023/07/17 10:19:22 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_electrik_orders' doesn't exist for query SELECT * FROM wp_electrik_orders made by do_action('toplevel_page_my_order_list'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->my_order_list_page" while reading upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/admin.php?page=my_order_list HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?charsout=678&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s"
+2023/07/17 10:19:31 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            ' at line 3 for query CREATE TABLE IF NOT EXISTS wp_electrik_orders (
+            id mediumint(9) NOT NULL AUTO_INCREMENT,
+            name constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            product constchar(255) NOT NULL,
+            PRIMARY KEY  (id)
+        ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_electrik/electrik.php'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->activation, Electrik->create_table, dbDelta" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/plugins.php?action=activate&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s&_wpnonce=db95d83c3e HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2023/07/17 10:19:35 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_electrik_orders' doesn't exist for query SELECT * FROM wp_electrik_orders made by do_action('toplevel_page_my_order_list'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->my_order_list_page" while reading upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/admin.php?page=my_order_list HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?charsout=678&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s"
+2023/07/17 10:19:37 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_electrik_orders' doesn't exist for query SELECT * FROM wp_electrik_orders made by do_action('toplevel_page_my_order_list'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->my_order_list_page" while reading upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/admin.php?page=my_order_list HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?charsout=678&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s"
+2023/07/17 10:20:36 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            ' at line 3 for query CREATE TABLE IF NOT EXISTS wp_electrik_orders (
+            id mediumint(9) NOT NULL AUTO_INCREMENT,
+            name constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            product constchar(255) NOT NULL,
+            PRIMARY KEY  (id)
+        ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_electrik/electrik.php'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->activation, Electrik->create_table, dbDelta" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/plugins.php?action=activate&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s&_wpnonce=db95d83c3e HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2023/07/17 10:20:38 [error] 22#22: *773 FastCGI sent in stderr: "PHP message: WordPress database error Table 'wordpress.loc.wp_electrik_orders' doesn't exist for query SELECT * FROM wp_electrik_orders made by do_action('toplevel_page_my_order_list'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->my_order_list_page" while reading upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/admin.php?page=my_order_list HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?charsout=678&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s"
+2023/07/17 10:32:29 [error] 22#22: *850 FastCGI sent in stderr: "PHP message: WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            ' at line 3 for query CREATE TABLE IF NOT EXISTS wp_electrik_orders (
+            id mediumint(9) NOT NULL AUTO_INCREMENT,
+            name constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            product constchar(255) NOT NULL,
+            PRIMARY KEY  (id)
+        ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_electrik/electrik.php'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->activation, Electrik->create_table, dbDelta" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/plugins.php?action=activate&plugin=electrik%2Felectrik.php&plugin_status=all&paged=1&s&_wpnonce=db95d83c3e HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2023/07/17 10:32:29 [error] 22#22: *852 FastCGI sent in stderr: "PHP message: WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            ' at line 3 for query CREATE TABLE IF NOT EXISTS wp_electrik_orders (
+            id mediumint(9) NOT NULL AUTO_INCREMENT,
+            name constchar(255) NOT NULL,
+            phone constchar(255) NOT NULL,
+            product constchar(255) NOT NULL,
+            PRIMARY KEY  (id)
+        ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by do_action('activate_electrik/electrik.php'), WP_Hook->do_action, WP_Hook->apply_filters, Electrik->activation, Electrik->create_table, dbDelta" while reading response header from upstream, client: 172.25.0.1, server: wordpress.loc, request: "GET /wp-admin/plugins.php?action=error_scrape&plugin=electrik%2Felectrik.php&_wpnonce=e2a9e0df48 HTTP/1.1", upstream: "fastcgi://172.25.0.4:9000", host: "wordpress.loc", referrer: "http://wordpress.loc/wp-admin/plugins.php?plugin=electrik%2Felectrik.php"
+2023/07/17 13:52:31 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/07/17 13:52:31 [notice] 20#20: gracefully shutting down
+2023/07/17 13:52:31 [notice] 21#21: gracefully shutting down
+2023/07/17 13:52:31 [notice] 21#21: exiting
+2023/07/17 13:52:31 [notice] 20#20: exiting
+2023/07/17 13:52:31 [notice] 21#21: exit
+2023/07/17 13:52:31 [notice] 20#20: exit
+2023/07/17 13:52:31 [notice] 22#22: gracefully shutting down
+2023/07/17 13:52:31 [notice] 22#22: exiting
+2023/07/17 13:52:31 [notice] 22#22: exit
+2023/07/17 13:52:31 [notice] 23#23: gracefully shutting down
+2023/07/17 13:52:31 [notice] 23#23: exiting
+2023/07/17 13:52:31 [notice] 23#23: exit
+2023/07/17 13:52:31 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/07/17 13:52:31 [notice] 1#1: worker process 20 exited with code 0
+2023/07/17 13:52:31 [notice] 1#1: worker process 22 exited with code 0
+2023/07/17 13:52:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/17 13:52:31 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/07/17 13:52:31 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/07/17 13:52:31 [notice] 1#1: worker process 23 exited with code 0
+2023/07/17 13:52:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/17 13:52:31 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/07/17 13:52:31 [notice] 1#1: worker process 21 exited with code 0
+2023/07/17 13:52:31 [notice] 1#1: exit

@@ -1,0 +1,26 @@
+<mat-dialog-content>
+  <form [formGroup]="form">
+    <mat-form-field appearance="outline" class="input_block">
+      <mat-label>Англійською</mat-label>
+      <input id="translate" matInput formControlName="translate" autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="input_block">
+      <mat-label>Українською</mat-label>
+      <input id="word_ua" matInput formControlName="word_ua" autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="input_block">
+      <mat-label>Російською</mat-label>
+      <input id="word_ru" matInput formControlName="word_ru" autocomplete="off">
+    </mat-form-field>
+
+    <div>
+      <button (click)="onSave()" [disabled]="!form.valid" mat-button color="primary">Зберегти</button>
+      <ng-container *ngIf="destroyHiden">
+        <button (click)="onDestroy()" mat-button color="warn">Видалити</button>
+      </ng-container>
+      <button mat-button mat-dialog-close>Вийти</button>
+    </div>
+  </form>
+</mat-dialog-content>

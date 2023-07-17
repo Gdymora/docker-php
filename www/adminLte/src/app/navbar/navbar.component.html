@@ -1,0 +1,50 @@
+<mat-toolbar>
+
+  <span><a routerLink="/"><img style="width: 42px;" src='assets/logo.png' /></a></span>
+
+  <span class="menu-spacer"></span>
+
+  <!-- unauthorized items -->
+  <span *ngIf="false">
+    <a mat-fab color="basic" routerLink="/signup">
+      <mat-icon>assignment_ind</mat-icon>
+    </a>
+    <a mat-fab color="basic" routerLink="/login">
+      <mat-icon>login</mat-icon>
+    </a>
+  </span>
+
+  <!-- authorized items -->
+  <span *ngIf="true" class="menu_items">
+
+    <!-- dictionaries -->
+    <button mat-fab color="basic" [matMenuTriggerFor]="dictionaries" aria-label="Профиль">
+      <mat-icon>collections_bookmark</mat-icon>
+    </button>
+
+    <mat-menu #dictionaries="matMenu">
+      <a mat-menu-item routerLink="/products">Артикула</a>      
+      <a mat-menu-item [matMenuTriggerFor]="dict">Довідники</a>
+      <a mat-menu-item routerLink="/users">Користувачі</a>
+    </mat-menu>
+
+    <mat-menu #model="matMenu">
+      <a mat-menu-item routerLink="models">Словники</a>
+    </mat-menu>    
+    <mat-menu #dict="matMenu">
+      <a mat-menu-item routerLink="/dictionary-table">Словник</a>
+    </mat-menu>
+  
+
+    <!-- profile -->
+    <button mat-fab color="basic" [matMenuTriggerFor]="profile" aria-label="Профиль">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+    <mat-menu #profile="matMenu">
+      <a mat-menu-item routerLink="/" >Выйти</a>
+    </mat-menu>
+
+
+  </span>
+</mat-toolbar>

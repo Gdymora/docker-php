@@ -1,0 +1,18 @@
+<div class="overlay">
+  <div class="spiner-container" *ngIf="viewData === undefined; else viewTable">
+    OLL
+  </div>
+</div>
+
+<ng-template #viewTable>
+  <app-dynamic-tables-table
+      [viewData]="viewData"
+      (tablePagesEvent)="getServerNavigateData($event)"
+      (tableFilterApply)="getServerNavigateFilterApply($event)"
+      (tableLoadSort)="getServerSortTable($event)"
+      (saveUpdateClicked)="getUpdateForm($event)"
+      (saveCreateClicked)="getCreateForm($event)"
+      (destroyClicked)="getDestroyForm($event)"
+      >
+  </app-dynamic-tables-table>
+</ng-template>

@@ -1,0 +1,603 @@
+[
+  {
+    "id": 1,
+    "word": { "ua": "Бути", "ru": "где" },
+    "translate": "Be",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 2,
+    "word": { "ua": "Мати", "ru": "где" },
+    "translate": "Have",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 3,
+    "word": { "ua": "Робити", "ru": "где" },
+    "translate": "Do",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 4,
+    "word": { "ua": "Казати", "ru": "где" },
+    "translate": "Say",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 5,
+    "word": { "ua": "Йти", "ru": "где" },
+    "translate": "Go",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 6,
+    "word": { "ua": "Могти", "ru": "где" },
+    "translate": "Can",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 7,
+    "word": { "ua": "Отримувати", "ru": "где" },
+    "translate": "Get",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 8,
+    "word": { "ua": "Був, було б, буде", "ru": "где" },
+    "translate": "Would",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 9,
+    "word": { "ua": "Робити", "ru": "Уже" },
+    "translate": "Make",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 10,
+    "word": { "ua": "Знати", "ru": "где" },
+    "translate": "Know",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 11,
+    "word": { "ua": "Бажати", "ru": "где" },
+    "translate": "Will",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 12,
+    "word": { "ua": "Думати", "ru": "где" },
+    "translate": "Think",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 13,
+    "word": { "ua": "Брати", "ru": "где" },
+    "translate": "Take",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 14,
+    "word": { "ua": "Бачити", "ru": "где" },
+    "translate": "See",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 15,
+    "word": { "ua": "Приходити", "ru": "где" },
+    "translate": "Come",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 16,
+    "word": { "ua": "Могти", "ru": "где" },
+    "translate": "Could",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 17,
+    "word": { "ua": "Хотіти", "ru": "где" },
+    "translate": "Want",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 18,
+    "word": { "ua": "Дивитися", "ru": "где" },
+    "translate": "Look",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 19,
+    "word": { "ua": "Використовувати", "ru": "где" },
+    "translate": "Use",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 20,
+    "word": { "ua": "Знаходити", "ru": "где" },
+    "translate": "Find",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 21,
+    "word": { "ua": "Діставати", "ru": "где" },
+    "translate": "Give",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 22,
+    "word": { "ua": "Казати", "ru": "где" },
+    "translate": "Tell",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 23,
+    "word": { "ua": "Працювати", "ru": "где" },
+    "translate": "Work",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 24,
+    "word": { "ua": "Могти", "ru": "где" },
+    "translate": "May",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 25,
+    "word": { "ua": "Повинен", "ru": "где" },
+    "translate": "Should",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 26,
+    "word": { "ua": "Дзвонити", "ru": "где" },
+    "translate": "Call",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 27,
+    "word": { "ua": "Запитувати", "ru": "где" },
+    "translate": "Ask",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 28,
+    "word": { "ua": "Пробувати", "ru": "где" },
+    "translate": "Try",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 29,
+    "word": { "ua": "Потребувати", "ru": "где" },
+    "translate": "Need",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 30,
+    "word": { "ua": "Почувати", "ru": "где" },
+    "translate": "Feel",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 31,
+    "word": { "ua": "Ставати", "ru": "где" },
+    "translate": "Become",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 32,
+    "word": { "ua": "Залишати", "ru": "где" },
+    "translate": "Leave",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 33,
+    "word": { "ua": "Класти", "ru": "где" },
+    "translate": "Put",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 34,
+    "word": { "ua": "Означати", "ru": "где" },
+    "translate": "Mean",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 35,
+    "word": { "ua": "Зберігати", "ru": "где" },
+    "translate": "Keep",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 36,
+    "word": { "ua": "Дозволяти", "ru": "где" },
+    "translate": "Let",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 37,
+    "word": { "ua": "Починати", "ru": "где" },
+    "translate": "Run",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 38,
+    "word": { "ua": "Здається", "ru": "где" },
+    "translate": "Move",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 39,
+    "word": { "ua": "Допомагати", "ru": "где" },
+    "translate": "Like",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 40,
+    "word": { "ua": "Говорити", "ru": "где" },
+    "translate": "Talk",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 41,
+    "word": { "ua": "Повернути", "ru": "где" },
+    "translate": "Turn",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 42,
+    "word": { "ua": "Почати", "ru": "где" },
+    "translate": "Start",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 43,
+    "word": { "ua": "Могти", "ru": "где" },
+    "translate": "Might",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 44,
+    "word": { "ua": "Показувати", "ru": "где" },
+    "translate": "Show",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 45,
+    "word": { "ua": "Чути", "ru": "где" },
+    "translate": "Hear",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 46,
+    "word": { "ua": "Грати", "ru": "где" },
+    "translate": "Play",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 47,
+    "word": { "ua": "Бігти", "ru": "где" },
+    "translate": "Run",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 48,
+    "word": { "ua": "Рухатися", "ru": "где" },
+    "translate": "Move",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 49,
+    "word": { "ua": "Подобатися", "ru": "где" },
+    "translate": "Like",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 50,
+    "word": { "ua": "Жити", "ru": "где" },
+    "translate": "Live",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 51,
+    "word": { "ua": "Вірити", "ru": "где" },
+    "translate": "Believe",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 52,
+    "word": { "ua": "Триматися", "ru": "где" },
+    "translate": "Hold",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 53,
+    "word": { "ua": "Приносити", "ru": "где" },
+    "translate": "Bring",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 54,
+    "word": { "ua": "Траплятися", "ru": "где" },
+    "translate": "Happen",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 55,
+    "word": { "ua": "Мусити", "ru": "где" },
+    "translate": "Must",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 56,
+    "word": { "ua": "Писати", "ru": "где" },
+    "translate": "Write",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 57,
+    "word": { "ua": "Забезпечити", "ru": "где" },
+    "translate": "Provide",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 58,
+    "word": { "ua": "Сидіти", "ru": "где" },
+    "translate": "Sit",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 59,
+    "word": { "ua": "Стояти", "ru": "где" },
+    "translate": "Stand",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 60,
+    "word": { "ua": "Програвати", "ru": "где" },
+    "translate": "Lose",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 61,
+    "word": { "ua": "Платити", "ru": "где" },
+    "translate": "Pay",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 62,
+    "word": { "ua": "Зустрічати", "ru": "где" },
+    "translate": "Meet",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 63,
+    "word": { "ua": "Включати", "ru": "где" },
+    "translate": "Include",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 64,
+    "word": { "ua": "Продовжувати", "ru": "где" },
+    "translate": "Continue",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 65,
+    "word": { "ua": "Встановлювати", "ru": "где" },
+    "translate": "Set",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 66,
+    "word": { "ua": "Вивчати", "ru": "где" },
+    "translate": "Learn",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 67,
+    "word": { "ua": "Міняти", "ru": "где" },
+    "translate": "Change",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 68,
+    "word": { "ua": "Приводити", "ru": "где" },
+    "translate": "Lead",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 69,
+    "word": { "ua": "Розуміти", "ru": "где" },
+    "translate": "Understand",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 70,
+    "word": { "ua": "Дивитися", "ru": "где" },
+    "translate": "Watch",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 71,
+    "word": { "ua": "Наслідувати", "ru": "где" },
+    "translate": "Follow",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 72,
+    "word": { "ua": "Зупиняти", "ru": "где" },
+    "translate": "Stop",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 73,
+    "word": { "ua": "Творити", "ru": "где" },
+    "translate": "Create",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 74,
+    "word": { "ua": "Говорити", "ru": "где" },
+    "translate": "Speak",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 75,
+    "word": { "ua": "Читати", "ru": "где" },
+    "translate": "Read",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 76,
+    "word": { "ua": "Дозволяти", "ru": "где" },
+    "translate": "Allow",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 77,
+    "word": { "ua": "Додавати", "ru": "где" },
+    "translate": "Add",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 78,
+    "word": { "ua": "Витратити", "ru": "где" },
+    "translate": "Spend",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 79,
+    "word": { "ua": "Рости", "ru": "где" },
+    "translate": "Grow",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 80,
+    "word": { "ua": "Відкривати", "ru": "где" },
+    "translate": "Open",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 81,
+    "word": { "ua": "Гуляти", "ru": "где" },
+    "translate": "Walk",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 82,
+    "word": { "ua": "Перемагати", "ru": "где" },
+    "translate": "Win",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 83,
+    "word": { "ua": "Пропонувати", "ru": "где" },
+    "translate": "Offer",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 84,
+    "word": { "ua": "Памятати", "ru": "где" },
+    "translate": "Remember",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 85,
+    "word": { "ua": "Любити", "ru": "где" },
+    "translate": "Love",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 86,
+    "word": { "ua": "Розглянути", "ru": "где" },
+    "translate": "Consider",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 87,
+    "word": { "ua": "Зʼявлятися", "ru": "где" },
+    "translate": "Appear",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 88,
+    "word": { "ua": "Купити", "ru": "где" },
+    "translate": "Buy",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 89,
+    "word": { "ua": "Чекати", "ru": "где" },
+    "translate": "Walt",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 90,
+    "word": { "ua": "Служити", "ru": "где" },
+    "translate": "Serve",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 91,
+    "word": { "ua": "Помирати", "ru": "где" },
+    "translate": "Die",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 92,
+    "word": { "ua": "Відправити", "ru": "где" },
+    "translate": "Send",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 93,
+    "word": { "ua": "Очікувати", "ru": "где" },
+    "translate": "Expect",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 94,
+    "word": { "ua": "Будувати", "ru": "где" },
+    "translate": "Build",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 95,
+    "word": { "ua": "Залишатися", "ru": "где" },
+    "translate": "Stay",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 96,
+    "word": { "ua": "Падати", "ru": "где" },
+    "translate": "Fall",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 97,
+    "word": { "ua": "Різати", "ru": "где" },
+    "translate": "Cut",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 98,
+    "word": { "ua": "Досягати", "ru": "где" },
+    "translate": "Reach",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 99,
+    "word": { "ua": "Вбивати", "ru": "где" },
+    "translate": "Kill",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 100,
+    "word": { "ua": "Залишатися", "ru": "где" },
+    "translate": "Remain",
+    "partsOfspech": "noun"
+  }
+
+]

@@ -1,0 +1,68 @@
+/*FLEX*/
+.flex-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 90%;
+}
+
+.flex-main {
+  flex: 1 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  /* в колонку */
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-footer {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+.flex-horizontal-center {
+  justify-content: center;
+}
+
+.flex-horizontal-left {
+  justify-content: start;
+}
+.flex-horizontal-right {
+  justify-content: end;
+}
+
+.flex-vertical-center {
+  align-items: center;
+}
+
+.flex-vertical-top {
+  align-items: flex-start;
+}
+.flex-vertical-bottom {
+  align-items: flex-end;
+}
+
+.flex-vertical-top-self {
+  align-self: flex-start;
+}
+
+.flex-vertical-center-self {
+  align-self: center;
+}
+
+.flex-vertical-bottom-self {
+  align-self: flex-end;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-space-between {
+  justify-content: space-between;
+}

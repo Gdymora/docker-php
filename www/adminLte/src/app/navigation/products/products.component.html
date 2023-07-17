@@ -1,0 +1,13 @@
+<div class="products-container">
+  <english-back-button></english-back-button>
+  <div class="page-title">
+    Products
+  </div> 
+  <div class="product-list">
+    <div  [routerLink]="['/'+product.route, product.id]" 
+    class="product-item" 
+    *ngFor="let product of products[id]; let i = index">
+      <div class="text">{{ product.text['en'] }} </div>
+    </div>   
+  </div>
+</div>

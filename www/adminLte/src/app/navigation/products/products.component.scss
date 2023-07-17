@@ -1,0 +1,38 @@
+.products-container {
+  padding: 40px;
+  position: relative;
+}
+
+.products-container .page-title{
+  text-align: center;
+  font-size: 34px;
+}
+.products-container .product-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products-container .product-list .product-item {
+  width: 250px;
+  border-radius: 4px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #E62565;
+  color: white;
+  font-size: 24px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.products-container .product-list .product-item:hover {
+  background: #333;
+  color: white;
+}

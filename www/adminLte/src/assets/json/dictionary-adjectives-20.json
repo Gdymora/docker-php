@@ -1,0 +1,281 @@
+[
+    {
+      "id": 1,
+      "word": { "ua": "Чудово", "ru": "где" },
+      "translate": "great",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 2,
+      "word": { "ua": "Великий", "ru": "где" },
+      "translate": "large",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 3,
+      "word": { "ua": "Різні", "ru": "где" },
+      "translate": "different",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 4,
+      "word": { "ua": "Реальний", 
+      "ru": "где" },
+      "translate": "real",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 5,
+      "word": { "ua": "Тільки", "ru": "где" },
+      "translate": "only",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 6,
+      "word": { "ua": "Впевнено", "ru": "где" },
+      "translate": "sure",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 7,
+      "word": { "ua": "Рано", "ru": "где" },
+      "translate": "early",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 8,
+      "word": { "ua": "Здатний", "ru": "где" },
+      "translate": "able",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 9,
+      "word": { "ua": "Людина", "ru": "Уже" },
+      "translate": "human",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 10,
+      "word": { "ua": "Місцевий", "ru": "где" },
+      "translate": "local",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 11,
+      "word": { "ua": "Пізно", "ru": "где" },
+      "translate": "late",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 12,
+      "word": { "ua": "Важливіший", "ru": "где" },
+      "translate": "major",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 13,
+      "word": { "ua": "Краще", "ru": "где" },
+      "translate": "better",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 14,
+      "word": { "ua": "Можливий", "ru": "где" },
+      "translate": "possible",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 15,
+      "word": { "ua": "Цілий", "ru": "где" },
+      "translate": "whole",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 16,
+      "word": { "ua": "Правдивий", "ru": "где" },
+      "translate": "true",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 17,
+      "word": { "ua": "Нещодавно", "ru": "где" },
+      "translate": "recent",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 18,
+      "word": { "ua": "Певний", "ru": "где" },
+      "translate": "certain",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 19,
+      "word": { "ua": "Важкий", "ru": "где" },
+      "translate": "difficult",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 20,
+      "word": { "ua": "Доступний", "ru": "где" },
+      "translate": "available",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 21,
+      "word": { "ua": "Швидше за все", "ru": "где" },
+      "translate": "likely",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 22,
+      "word": { "ua": "Одинокий", "ru": "где" },
+      "translate": "single",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 23,
+      "word": { "ua": "Сучасний", "ru": "где" },
+      "translate": "current",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 24,
+      "word": { "ua": "Хибний", "ru": "где" },
+      "translate": "wrong",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 25,
+      "word": { "ua": "Минулий", "ru": "где" },
+      "translate": "past",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 26,
+      "word": { "ua": "Іноземний", "ru": "где" },
+      "translate": "foreign",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 27,
+      "word": { "ua": "Добре", "ru": "где" },
+      "translate": "fine",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 28,
+      "word": { "ua": "Загальний", "ru": "где" },
+      "translate": "common",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 29,
+      "word": { "ua": "Бідний", "ru": "где" },
+      "translate": "poor",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 30,
+      "word": { "ua": "Значний", "ru": "где" },
+      "translate": "Significant",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 31,
+      "word": { "ua": "Подібний", "ru": "где" },
+      "translate": "similar",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 32,
+      "word": { "ua": "Серйозний", "ru": "где" },
+      "translate": "serious",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 33,
+      "word": { "ua": "Готовий", "ru": "где" },
+      "translate": "ready",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 34,
+      "word": { "ua": "Простий", "ru": "где" },
+      "translate": "simple",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 35,
+      "word": { "ua": "Загальний", "ru": "где" },
+      "translate": "general",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 36,
+      "word": { "ua": "Екологічний", "ru": "где" },
+      "translate": "environmental",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 37,
+      "word": { "ua": "Різноманітний", "ru": "где" },
+      "translate": "various",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 38,
+      "word": { "ua": "Цілком", "ru": "где" },
+      "translate": "entire",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 39,
+      "word": { "ua": "Законний", "ru": "где" },
+      "translate": "legal",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 40,
+      "word": { "ua": "Релегійний", "ru": "где" },
+      "translate": "religious",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 41,
+      "word": { "ua": "Холодний", "ru": "где" },
+      "translate": "cold",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 42,
+      "word": { "ua": "Головний", "ru": "где" },
+      "translate": "main",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 43,
+      "word": { "ua": "Хороший", "ru": "где" },
+      "translate": "nice",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 44,
+      "word": { "ua": "Великий", "ru": "где" },
+      "translate": "huge",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 45,
+      "word": { "ua": "Популярний", "ru": "где" },
+      "translate": "popular",
+      "partsOfspech": "noun"
+    },
+    {
+      "id": 46,
+      "word": { "ua": "Культурний", "ru": "где" },
+      "translate": "cultural",
+      "partsOfspech": "noun"
+    }
+  
+  ]
+  

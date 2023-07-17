@@ -17,58 +17,35 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<!-- parts -->
-	<?php
-	get_template_part('partials/part');
+	<!-- parts -->
+	<?php 
+	//get_template_part('partials/part');
 	?>
-	<?php
-	get_template_part('partials/part', 'one');
-	?>
+	<?php 
+	//get_template_part('partials/part', 'one');
+	?>  
 
 	<?php wp_body_open(); ?>
-	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary">
-			<?php esc_html_e('Skip to content', 'jdymora'); ?>
-		</a>
+  <div class="menu">
+    <div class="div-menu-main">
+      <div class="div-30">
+        <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/6286169e7e678585cf65272c_logo.png" loading="lazy" height="25" alt class="image-2">
+          <div class="text-block">ВАШ МАЙСТЕР</div>
+        </div>
+      </div>
+      <div class="div-40">
+        <div class="text-header-2-copy"><a onclick="return gtag_report_conversion('tel:+380662435814');" href="tel:+380662435814" class="link-2"><span class="text-span">+38 (066) </span>243 58 14</a>
+          <br>
+        </div>
+      </div>
+      <div class="div-30-2">
+        <div onclick="openModal()" class="button-main-copy">ЗАМОВИТИ ДЗВІНОК</div>
+      </div>
+    </div>
+  </div>
 
-		<header id="masthead" class="site-header">
-			<div class="site-branding">
-				<?php
-				the_custom_logo();
-				if (is_front_page() && is_home()):
-					?>
-					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-					<?php
-				else:
-					?>
-					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
-					<?php
-				endif;
-				$jdymora_description = get_bloginfo('description', 'display');
-				if ($jdymora_description || is_customize_preview()):
-					?>
-					<p class="site-description">
-						<?php echo $jdymora_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					</p>
-				<?php endif; ?>
-			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<?php esc_html_e('Primary Menu', 'jdymora'); ?>
-				</button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id' => 'primary-menu',
-					)
-				);
-				?>
-			</nav><!-- #site-navigation -->
-		</header><!-- #masthead -->

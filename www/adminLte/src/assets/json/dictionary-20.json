@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "word": { "ua": "Видалити", "ru": "где" },
+    "translate": "Remove",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 2,
+    "word": { "ua": "Обставини", "ru": "где" },
+    "translate": "Сircumstances",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 3,
+    "word": { "ua": "Отже, як наслідок, тому", "ru": "где" },
+    "translate": "Consequently",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 4,
+    "word": { "ua": "Звільнення, випуск, вивільнення", 
+    "ru": "где" },
+    "translate": "Release",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 5,
+    "word": { "ua": "Наслідки", "ru": "где" },
+    "translate": "Consequences",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 6,
+    "word": { "ua": "Обережний, охайний, передбачливий", "ru": "где" },
+    "translate": "Precautious",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 7,
+    "word": { "ua": "Протипоказання", "ru": "где" },
+    "translate": "Contraindications",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 8,
+    "word": { "ua": "Істинність, правдивість", "ru": "где" },
+    "translate": "Veracity",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 9,
+    "word": { "ua": "Багаторічний", "ru": "Уже" },
+    "translate": "Perennial",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 10,
+    "word": { "ua": "Неясність, безвісність", "ru": "где" },
+    "translate": "Obscurity",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 11,
+    "word": { "ua": "Чоловік", "ru": "где" },
+    "translate": "Husband",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 12,
+    "word": { "ua": "Шлях, дорога, спосіб", "ru": "где" },
+    "translate": "Way",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 13,
+    "word": { "ua": "Який, як, якою, яке", "ru": "где" },
+    "translate": "Which",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 14,
+    "word": { "ua": "Треба, доводиться, довелось", "ru": "где" },
+    "translate": "Have to",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 15,
+    "word": { "ua": "Як це (робиться, зробити, отримати)", "ru": "где" },
+    "translate": "How to",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 16,
+    "word": { "ua": "Там, туди", "ru": "где" },
+    "translate": "There",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 17,
+    "word": { "ua": "Легкий спосіб", "ru": "где" },
+    "translate": "Easy way",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 18,
+    "word": { "ua": "Так леко", "ru": "где" },
+    "translate": "So easy",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 19,
+    "word": { "ua": "Після", "ru": "где" },
+    "translate": "After",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 20,
+    "word": { "ua": "Раніше", "ru": "где" },
+    "translate": "Before",
+    "partsOfspech": "noun"
+  }
+
+]

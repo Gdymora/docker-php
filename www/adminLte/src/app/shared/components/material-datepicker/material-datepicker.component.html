@@ -1,0 +1,8 @@
+<form [formGroup]="form" class="line">
+	<mat-form-field style="width:1px; visibility:hidden;">
+		<input matInput [matDatepicker]="datepickerA" [min]="minDate" [max]="maxDate" formControlName="dateArrival"
+			type="text" id="date">
+	</mat-form-field>
+	<mat-datepicker-toggle [for]="datepickerA"></mat-datepicker-toggle>
+	<mat-datepicker #datepickerA></mat-datepicker>
+</form>

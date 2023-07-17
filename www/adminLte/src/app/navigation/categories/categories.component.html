@@ -1,0 +1,12 @@
+<div class="categories-container">
+  <div class="page-title">Categories</div>
+  <div class="category-list">
+    <div
+      [routerLink]="['products', cat.route]"
+      class="category-item"
+      *ngFor="let cat of categories; let i = index"
+    >
+      <div class="text">Category {{ cat.text['en'] }}</div>
+    </div>
+  </div>
+</div>

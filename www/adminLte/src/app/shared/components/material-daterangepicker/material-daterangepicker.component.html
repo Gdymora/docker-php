@@ -1,0 +1,24 @@
+<ng-container *ngIf="flag; else formGoupPicker">
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Начальная дата - Конечная дата</mat-label>
+    <mat-date-range-input [formGroup]="campaignOne" [rangePicker]="campaignOnePicker">
+      <input matStartDate placeholder="Start date" [min]="minDate" [max]="maxDate" formControlName="start" id="date">
+      <input matEndDate placeholder="End date" formControlName="end">
+    </mat-date-range-input>
+    <mat-datepicker-toggle matSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+    <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+  </mat-form-field>
+</ng-container>
+
+<ng-template #formGoupPicker>
+  <form [formGroup]="campaignOne" class="line">
+    <mat-form-field appearance="fill" class="input_block">
+      <mat-label>Начальная дата</mat-label>
+      <input min="minDate" max="maxDate" matInput type="date" placeholder="Начальная" formControlName="start">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="input_block">
+      <mat-label>Конечная дата</mat-label>
+      <input min="minDate" max="maxDate" matInput type="date" placeholder="Конечная" formControlName="end">
+    </mat-form-field>
+  </form>
+</ng-template>

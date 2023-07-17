@@ -1,0 +1,303 @@
+[
+  {
+    "id": 1,
+    "word": { "ua": "де", "ru": "где" },
+    "translate": "Where",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 2,
+    "word": { "ua": "Там, туди", "ru": "где" },
+    "translate": "There",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 3,
+    "word": { "ua": "Кожен", "ru": "где" },
+    "translate": "Each",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 4,
+    "word": { "ua": "Просити", "ru": "где" },
+    "translate": "Beg",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 5,
+    "word": { "ua": "Надія", "ru": "где" },
+    "translate": "Hope",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 6,
+    "word": { "ua": "Належати", "ru": "где" },
+    "translate": "Belong",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 7,
+    "word": { "ua": "Використовувати", "ru": "где" },
+    "translate": "Use",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 8,
+    "word": { "ua": "Коли, де", "ru": "где" },
+    "translate": "Us",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 9,
+    "word": { "ua": "Вже", "ru": "Уже" },
+    "translate": "Already",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 10,
+    "word": { "ua": "Тільки", "ru": "где" },
+    "translate": "Only",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 11,
+    "word": { "ua": "Інший", "ru": "где" },
+    "translate": "Other",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 12,
+    "word": { "ua": "Тихий", "ru": "где" },
+    "translate": "Quiet",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 13,
+    "word": { "ua": "Потім", "ru": "где" },
+    "translate": "Then",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 14,
+    "word": { "ua": "Хотіти, бажати", "ru": "где" },
+    "translate": "Want",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 15,
+    "word": { "ua": "Коли", "ru": "где" },
+    "translate": "When",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 16,
+    "word": { "ua": "Який", "ru": "где" },
+    "translate": "Which",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 17,
+    "word": { "ua": "Майже", "ru": "где" },
+    "translate": "Almost",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 18,
+    "word": { "ua": "Також", "ru": "где" },
+    "translate": "Also",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 19,
+    "word": { "ua": "Так, щодо, як, згідно з, наче", "ru": "где" },
+    "translate": "As",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 20,
+    "word": { "ua": "Нести, везти, переправляти", "ru": "где" },
+    "translate": "Carry",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 21,
+    "word": { "ua": "Кожен", "ru": "где" },
+    "translate": "Every",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 22,
+    "word": { "ua": "Чути", "ru": "где" },
+    "translate": "Hear",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 23,
+    "word": { "ua": "Сто", "ru": "где" },
+    "translate": "Hundred",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 24,
+    "word": { "ua": "Часто", "ru": "где" },
+    "translate": "Often",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 25,
+    "word": { "ua": "Над, зверху, вище", "ru": "где" },
+    "translate": "Over",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 26,
+    "word": { "ua": "Тисяча", "ru": "где" },
+    "translate": "Thousand",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 27,
+    "word": { "ua": "Наш", "ru": "где" },
+    "translate": "Our",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 28,
+    "word": { "ua": "Сорт, вид, добрий", "ru": "где" },
+    "translate": "Kind",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 29,
+    "word": { "ua": "Тому що", "ru": "где" },
+    "translate": "Because",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 30,
+    "word": { "ua": "Тут, сюди", "ru": "где" },
+    "translate": "Here",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 31,
+    "word": { "ua": "Культура, врожай", "ru": "где" },
+    "translate": "Crop",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 32,
+    "word": { "ua": "Навколо, усіди, приблизно, майже", "ru": "где" },
+    "translate": "About",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 33,
+    "word": { "ua": "Ніколи", "ru": "где" },
+    "translate": "Never",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 34,
+    "word": { "ua": "Спосіб, засіб, багатство", "ru": "где" },
+    "translate": "Means",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 35,
+    "word": { "ua": "Ніхто", "ru": "где" },
+    "translate": "Nobody",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 36,
+    "word": { "ua": "Ніщо", "ru": "где" },
+    "translate": "Nothing",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 37,
+    "word": { "ua": "Ніякий", "ru": "где" },
+    "translate": "No",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 38,
+    "word": { "ua": "Навпроти, проти", "ru": "где" },
+    "translate": "Opposite",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 39,
+    "word": { "ua": "Повинні", "ru": "где" },
+    "translate": "Shall",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 40,
+    "word": { "ua": "Однак, яким чином, проте", "ru": "где" },
+    "translate": "However",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 41,
+    "word": { "ua": "Сказати", "ru": "где" },
+    "translate": "Say",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 42,
+    "word": { "ua": "Шлях, засіб", "ru": "где" },
+    "translate": "Way",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 43,
+    "word": { "ua": "Радіти", "ru": "где" },
+    "translate": "Glad",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 44,
+    "word": { "ua": "Воля, бажання", "ru": "где" },
+    "translate": "Wil",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 45,
+    "word": { "ua": "Хто небудь", "ru": "где" },
+    "translate": "AnyOne",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 46,
+    "word": { "ua": "Задоволення", "ru": "где" },
+    "translate": "Pleasure",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 47,
+    "word": { "ua": "В міру", "ru": "где" },
+    "translate": "Measure",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 48,
+    "word": { "ua": "точно, вірний, безперечний", "ru": "где" },
+    "translate": "Sure",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 49,
+    "word": { "ua": "необхідно", "ru": "где" },
+    "translate": "Necessary",
+    "partsOfspech": "noun"
+  },
+  {
+    "id": 50,
+    "word": { "ua": "самостійно", "ru": "где" },
+    "translate": "Independently",
+    "partsOfspech": "noun"
+  }
+
+]
