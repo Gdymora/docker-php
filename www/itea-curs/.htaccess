@@ -1,0 +1,8 @@
+AddDefaultCharset Off
+<IfModule dir_module>
+   RewriteEngine On
+   #  Директива включает редиректы.
+   RewriteRule ^(.*)$ public/$1
+</IfModule>
+
+#указали на папку паблик
