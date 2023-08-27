@@ -51,8 +51,10 @@ sites-enabled зберігаючи блок сервера, sites-available як
 
 # 
 Bash into your container:
-composer create-project laravel/laravel example-1
-docker-compose exec php bash
+composer create-project laravel/laravel lara10-1
+sudo chown ${USER} lara10-1/
+docker exec -it php bash
+docker exec -it php-8 bash
 
 використовувати наступні псевдоніми, щоб не заходити щоразу в контейнер:
 
@@ -61,9 +63,9 @@ alias artisan="docker-compose exec app php artisan"
 alias composer="docker-compose exec php composer"
 
 або команди
-docker-compose exec php bash
+docker exec -it php8 bash
 composer команда
 # artisan
-docker-compose exec php bash
+docker exec -it php8 bash
 cd example-1/
 php artisan serve --host=0.0.0.0 --port=8000
