@@ -50,6 +50,8 @@ services:
             - ./www:/var/www
         networks:
           - app-network 
+        ports:
+          - "8000:8000" 
             
     phpmyadmin:
         image: phpmyadmin/phpmyadmin        
