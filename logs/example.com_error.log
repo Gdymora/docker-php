@@ -1,5 +1,0 @@
-2023/03/23 10:42:53 [error] 22#22: *2 rewrite or internal redirection cycle while internally redirecting to "/index.php", client: 172.21.0.1, server: wordpress.conf, request: "GET / HTTP/1.1", host: "wordpress.loc"
-2023/03/23 10:42:54 [error] 21#21: *1 rewrite or internal redirection cycle while internally redirecting to "/index.php", client: 172.21.0.1, server: wordpress.conf, request: "GET / HTTP/1.1", host: "wordpress.loc"
-2023/03/23 10:43:48 [error] 19#19: *1 rewrite or internal redirection cycle while internally redirecting to "/index.php", client: 172.21.0.1, server: wordpress.conf, request: "GET / HTTP/1.1", host: "wordpress.loc"
-2023/03/23 10:43:49 [error] 19#19: *2 rewrite or internal redirection cycle while internally redirecting to "/index.php", client: 172.21.0.1, server: wordpress.conf, request: "GET / HTTP/1.1", host: "wordpress.loc"
-2023/03/23 10:44:07 [error] 20#20: *3 rewrite or internal redirection cycle while internally redirecting to "/index.php", client: 172.21.0.1, server: wordpress.conf, request: "GET / HTTP/1.1", host: "wordpress.loc"
