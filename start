@@ -1,4 +1,18 @@
 #!/bin/bash 
+#!/bin/bash 
+if [ -z "$1" ]; then
+  echo "Usage: $0 <php_version>"
+  exit 1
+fi
+
+# Определяем переданную версию PHP
+php_version="$1"
+
+# Останавливаем сервисы
 sudo service mysql stop
 sudo service nginx stop
-docker-compose up
+
+# Запускаем docker-compose для указанной версии PHP
+docker-compose -f "docker-compose-php$php_version.yml" up
+# example comand
+# ./start 7 or ./start 8

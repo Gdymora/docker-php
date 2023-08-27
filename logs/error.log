@@ -557,3 +557,46 @@
 2023/07/17 13:52:31 [notice] 1#1: signal 17 (SIGCHLD) received from 21
 2023/07/17 13:52:31 [notice] 1#1: worker process 21 exited with code 0
 2023/07/17 13:52:31 [notice] 1#1: exit
+2023/08/17 10:31:10 [notice] 1#1: using the "epoll" event method
+2023/08/17 10:31:10 [notice] 1#1: nginx/1.25.2
+2023/08/17 10:31:10 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/17 10:31:10 [notice] 1#1: OS: Linux 5.19.0-50-generic
+2023/08/17 10:31:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/17 10:31:10 [notice] 1#1: start worker processes
+2023/08/17 10:31:10 [notice] 1#1: start worker process 19
+2023/08/17 10:31:10 [notice] 1#1: start worker process 20
+2023/08/17 10:31:10 [notice] 1#1: start worker process 21
+2023/08/17 10:31:10 [notice] 1#1: start worker process 22
+2023/08/17 11:04:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/08/17 11:04:42 [notice] 21#21: gracefully shutting down
+2023/08/17 11:04:42 [notice] 21#21: exiting
+2023/08/17 11:04:42 [notice] 21#21: exit
+2023/08/17 11:04:42 [notice] 19#19: gracefully shutting down
+2023/08/17 11:04:42 [notice] 19#19: exiting
+2023/08/17 11:04:42 [notice] 19#19: exit
+2023/08/17 11:04:42 [notice] 22#22: gracefully shutting down
+2023/08/17 11:04:42 [notice] 22#22: exiting
+2023/08/17 11:04:42 [notice] 22#22: exit
+2023/08/17 11:04:42 [notice] 20#20: gracefully shutting down
+2023/08/17 11:04:42 [notice] 20#20: exiting
+2023/08/17 11:04:42 [notice] 20#20: exit
+2023/08/17 11:04:43 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/08/17 11:04:43 [notice] 1#1: worker process 20 exited with code 0
+2023/08/17 11:04:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/17 11:04:43 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2023/08/17 11:04:43 [notice] 1#1: worker process 19 exited with code 0
+2023/08/17 11:04:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/17 11:04:43 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/08/17 11:04:43 [notice] 1#1: worker process 21 exited with code 0
+2023/08/17 11:04:43 [notice] 1#1: worker process 22 exited with code 0
+2023/08/17 11:04:43 [notice] 1#1: exit
+2023/08/27 09:39:02 [notice] 1#1: using the "epoll" event method
+2023/08/27 09:39:02 [notice] 1#1: nginx/1.25.2
+2023/08/27 09:39:02 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/27 09:39:02 [notice] 1#1: OS: Linux 6.2.0-26-generic
+2023/08/27 09:39:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/27 09:39:02 [notice] 1#1: start worker processes
+2023/08/27 09:39:02 [notice] 1#1: start worker process 21
+2023/08/27 09:39:02 [notice] 1#1: start worker process 22
+2023/08/27 09:39:02 [notice] 1#1: start worker process 23
+2023/08/27 09:39:02 [notice] 1#1: start worker process 24

@@ -1,0 +1,89 @@
+# Версия docker-compose
+version: '3.7'
+# Список наших сервисов (контейнеров)
+services:
+    nginx:
+ # используем последний стабильный образ nginx
+        image: nginx:latest
+     
+        # Назовем свой контейнер по красивому
+        container_name: nginx
+        restart: unless-stopped
+        # маршрутизируем порты 
+        ports:
+            - "80:80"
+            - "443:443"
+        # монтируем директории, слева директории на основной машине, справа - куда они монтируются в контейнере
+        volumes:   
+            - ./conf/nginx/conf.d/:/etc/nginx/conf.d/ 
+           # - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf        
+            #- ./conf/nginx/sites-available:/etc/nginx/sites-available 
+           # - ./conf/nginx/sites-enabled:/etc/nginx/sites-enabled 
+            - ./conf/nginx/html:/usr/share/nginx/html
+            - ./conf/nginx/ssl:/etc/nginx/ssl
+            - ./www:/var/www
+            - ./logs:/var/log/nginx
+
+        environment:
+            NGINX_HOST: localhost
+            NGINX_PORT: 8080
+      
+        # nginx должен общаться с php контейнером
+
+        depends_on:
+            - php
+        networks:
+          - app-network 
+    
+    php:
+        build: ./images/php8
+        environment:
+          MYSQL_HOST: mysql
+          MYSQL_DATABASE: myapp
+          MYSQL_USER: myuser
+          MYSQL_PASSWORD: mypassword
+        # этот образ будет общаться с mysql
+        depends_on:
+            - mysql
+        # монтируем директорию с проектами
+        volumes:
+            - ./www:/var/www
+        networks:
+          - app-network 
+            
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin        
+        container_name: phpmyadmin
+        restart: unless-stopped
+        ports:
+            - 8090:80 
+        environment:
+          PMA_HOST: mysql
+          MYSQL_ROOT_PASSWORD: secret       
+        depends_on:
+            - mysql
+        networks:
+          - app-network 
+
+    mysql:
+
+        image: mysql:8
+        ports:
+            - "3306:3306"
+        # задаем пароль для root пользователя
+        environment:
+            # прописываем название нашего MySQL хоста
+            PMA_HOST: mysql
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: secret
+        networks:
+          - app-network
+networks:
+  app-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+volumes:
+  mysql-data:
+    driver: local
