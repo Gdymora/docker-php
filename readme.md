@@ -69,3 +69,4 @@ composer команда
 docker exec -it php8 bash
 cd example-1/
 php artisan serve --host=0.0.0.0 --port=8000
+

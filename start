@@ -9,10 +9,10 @@ fi
 php_version="$1"
 
 # Останавливаем сервисы
-sudo service mysql stop
-sudo service nginx stop
+#sudo service mysql stop
+#sudo service nginx stop
 
 # Запускаем docker-compose для указанной версии PHP
-docker-compose -f "docker-compose-php$php_version.yml" up
+docker-compose -f "docker-compose-php$php_version.yml" up --build --remove-orphans
 # example comand
 # ./start 7 or ./start 8
