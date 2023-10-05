@@ -69,4 +69,10 @@ composer команда
 docker exec -it php8 bash
 cd example-1/
 php artisan serve --host=0.0.0.0 --port=8000
+После создания artisan 
+нужно добавить прав для каталога что б можно исполнять chmod +x 
+и для файлов
+-rw-rw-r-- выглядят как 664
+sudo chown ${USER}:${USER}
+
 

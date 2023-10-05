@@ -13,6 +13,6 @@ php_version="$1"
 #sudo service nginx stop
 
 # Запускаем docker-compose для указанной версии PHP
-docker-compose -f "docker-compose-php$php_version.yml" up --build --remove-orphans
+docker-compose -f "docker-compose-php$php_version.yml" up #--build --remove-orphans
 # example comand
 # ./start 7 or ./start 8
