@@ -1,6 +1,7 @@
 mysql
 logs/*.log
+www/
 www/Starterkit/
 www/ujv-api/
 www/ujv-api1/
-
+node_modules

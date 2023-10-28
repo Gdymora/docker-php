@@ -41,7 +41,7 @@ services:
         depends_on:
             - mysql
         volumes:
-            - ./www:/var/www
+            - ./www:/var/www 
         networks:
           - app-network 
         ports:
