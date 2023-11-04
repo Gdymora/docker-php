@@ -52,9 +52,9 @@ sites-enabled зберігаючи блок сервера, sites-available як
 # 
 Bash into your container:
 composer create-project laravel/laravel lara10-1
-sudo chown ${USER} lara10-1/
+sudo chown -R ${USER}:${USER} lara10-1/
 docker exec -it php bash
-docker exec -it php-8 bash
+docker exec -it php8 bash
 
 використовувати наступні псевдоніми, щоб не заходити щоразу в контейнер:
 

@@ -1,16 +1,42 @@
 #!/bin/bash 
-#!/bin/bash 
 if [ -z "$1" ]; then
   echo "Usage: $0 <php_version>"
   exit 1
 fi
 
-# Определяем переданную версию PHP
+if [ "$1" == "r" ]; then
+  echo "stop"
+  exit 0  # Вихід зі скрипта з кодом 0 (успішно). 
+fi
+
+if [ "$1" == "h" ]; then
+  echo "./start stop - stop nginx and mysql"
+  echo "./start 8 - start docker-compose-php8.yml up"
+  echo "./start 7 - start docker-compose-php7.yml up"
+  echo "./start 8 build - start docker-compose-php8.yml up --build --remove-orphans"
+  echo "./start 8 down - docker-compose-php8.yml down"
+  exit 0
+fi
+
+if [ "$1" == "stop" ]; then
+  echo "stop"
+  # Останавливаем сервисы
+  sudo service mysql stop
+  sudo service nginx stop
+  exit 1
+fi
+
 php_version="$1"
 
-# Останавливаем сервисы
-#sudo service mysql stop
-#sudo service nginx stop
+if [ "$2" == "build" ]; then
+  docker-compose -f "docker-compose-php$php_version.yml" up --build --remove-orphans
+  exit 0
+fi
+
+if [ "$2" == "down" ]; then
+  docker-compose -f "docker-compose-php$php_version.yml" down
+  exit 0
+fi
 
 # Запускаем docker-compose для указанной версии PHP
 docker-compose -f "docker-compose-php$php_version.yml" up #--build --remove-orphans
