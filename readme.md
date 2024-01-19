@@ -14,6 +14,10 @@ sudo usermod -aG docker ${USER}
 
 sudo service mysql stop
 sudo service nginx stop
+# зупинити dockerdocker ps -a
+docker stop $(docker ps -q)
+# якщо зайнятий порт подивитись
+sudo lsof -i -P -n | grep 8090
 
 Команды
 
@@ -34,9 +38,7 @@ sudo chgrp -R www-data storage bootstrap/cache; sudo chmod -R ug+rwx storage boo
 после
 
 php artisan route:clear
-
 php artisan config:clear
-
 php artisan cache:clear
 
 
