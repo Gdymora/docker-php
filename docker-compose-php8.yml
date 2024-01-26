@@ -43,14 +43,16 @@ services:
             - mysql
         volumes:
             - ./www:/var/www 
+            - ./images/php8/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini  
         networks:
           - app-network 
         ports:
           - "8000:8000"
           - "5173:5173" 
-        working_dir: /var/www/socialnetwork/cabinet
+        working_dir: /var/www/socialnetwork/cabinet 
         command: /var/www/socialnetwork/cabinet/start.sh
-            
+            # systemctl status php8.2-fpm.service
+
     phpmyadmin:
         image: phpmyadmin/phpmyadmin        
         container_name: phpmyadmin
@@ -78,7 +80,7 @@ services:
             MYSQL_USERNAME: root
             MYSQL_ROOT_PASSWORD: secret
         volumes:
-            - mysql-data:/var/lib/mysql_php8        
+            - /var/lib/mysql/mysql-data-docker-php:/var/lib/mysql 
         networks:
           - app-network
     #npm:

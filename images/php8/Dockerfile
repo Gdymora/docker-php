@@ -8,6 +8,7 @@ RUN set -eux; \
     apt-get install -y --no-install-recommends \
     curl \
     wget \
+    nano \
     git \
     libmemcached-dev \
     libz-dev \
@@ -31,7 +32,7 @@ RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN apt-get install -y nodejs npm;
-ADD ./php.ini /etc/php/8.2/fpm/php.ini
+#ADD ./php.ini /etc/php/8.2/fpm/php.ini
 
 WORKDIR /var/www
 

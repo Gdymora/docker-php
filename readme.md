@@ -31,12 +31,14 @@ http://local:8090/
 http://localhost:8090/
 
 Laravel
-
+# storagesudo 
+chown -R www-data:www-data storage
+sudo chmod -R 755 storage
 Устанавливаем права доступа на каталоги, для которых необходимы права на запись:
 
 sudo chgrp -R www-data storage bootstrap/cache; sudo chmod -R ug+rwx storage bootstrap/cache
 после
-
+docker exec -it php8 bash
 php artisan route:clear
 php artisan config:clear
 php artisan cache:clear
@@ -67,6 +69,8 @@ alias composer="docker-compose exec php composer"
 або команди
 docker exec -it php8 bash
 composer команда
+npm command
+npm install moment
 # artisan
 docker exec -it php8 bash
 cd example-1/
