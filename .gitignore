@@ -1,7 +1,6 @@
 mysql
 logs/*.log
-www/
-www/Starterkit/
-www/ujv-api/
-www/ujv-api1/
+mysql-data-docker-php/*
+phpdockerimages/*
+www/*
 node_modules

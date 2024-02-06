@@ -48,9 +48,12 @@ services:
           - app-network 
         ports:
           - "8000:8000"
+          - "8001:8001"
           - "5173:5173" 
-        working_dir: /var/www/socialnetwork/cabinet 
-        command: /var/www/socialnetwork/cabinet/start.sh
+          - "5132:5132" 
+        working_dir: /var/www
+        command: /bin/bash -c "/var/www/accounting/start.sh && /var/www/socialnetwork/cabinet/start.sh"
+
             # systemctl status php8.2-fpm.service
 
     phpmyadmin:
@@ -80,7 +83,8 @@ services:
             MYSQL_USERNAME: root
             MYSQL_ROOT_PASSWORD: secret
         volumes:
-            - /var/lib/mysql/mysql-data-docker-php:/var/lib/mysql 
+           # - /var/lib/mysql/mysql-data-docker-php:/var/lib/mysql
+            - ./mysql-data-docker-php:/var/lib/mysql 
         networks:
           - app-network
     #npm:
