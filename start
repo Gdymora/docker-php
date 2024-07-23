@@ -1,4 +1,15 @@
 #!/bin/bash 
+# Ім'я мережі
+NETWORK_NAME="shared_network"
+
+# Перевірка існування мережі
+if ! docker network ls | grep -q "$NETWORK_NAME"; then
+  echo "Мережа $NETWORK_NAME не знайдена. Створюємо мережу..."
+  docker network create "$NETWORK_NAME"
+else
+  echo "Мережа $NETWORK_NAME вже існує."
+fi
+  
 if [ -z "$1" ]; then
   echo "Usage: $0 <php_version>"
   exit 1

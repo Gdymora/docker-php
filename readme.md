@@ -32,17 +32,24 @@ http://localhost:8090/
 
 Laravel
 # storagesudo 
+
 chown -R www-data:www-data storage
+chown -R www-data:www-data bootstrap
 sudo chmod -R 755 storage
 Устанавливаем права доступа на каталоги, для которых необходимы права на запись:
 
 sudo chgrp -R www-data storage bootstrap/cache; sudo chmod -R ug+rwx storage bootstrap/cache
 после
 docker exec -it php8 bash
-php artisan route:clear
+
 php artisan config:clear
+php artisan route:clear
 php artisan cache:clear
 
+Якщо dataкаталог не існує під ( storage/framework/cache/data), то ви отримаєте цю помилку:
+ERROR  Failed to clear cache. Make sure you have the appropriate permissions. 
+Цей dataкаталог не існує за замовчуванням під час нової інсталяції.
+Створення dataкаталогу вручну за адресою (storage/framework/cache) має вирішити цю проблему.
 
 #
 sudo ln -s /conf/nginx/sites-available/your_domain /conf/nginx/sites-enabled/

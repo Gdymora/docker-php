@@ -1,34 +1,26 @@
 # Версия docker-compose
 version: '3.7'
-# Список наших сервисов (контейнеров)
 services:
-    nginx:
- # используем последний стабильный образ nginx
-        image: nginx:latest
-     
-        # Назовем свой контейнер по красивому
-        container_name: nginx
-        restart: unless-stopped
-        # маршрутизируем порты 
-        ports:
-            - "80:80"
-            - "443:443"
-        # монтируем директории, слева директории на основной машине, справа - куда они монтируются в контейнере
-        volumes:   
-            - ./conf/nginx/conf.d/:/etc/nginx/conf.d/ 
-            - ./conf/nginx/html:/usr/share/nginx/html
-            - ./conf/nginx/ssl:/etc/nginx/ssl
-            - ./www:/var/www
-            - ./logs:/var/log/nginx
-
-        environment:
-            NGINX_HOST: localhost
-            NGINX_PORT: 8080
-
-        depends_on:
-            - php-8
-        networks:
-          - app-network 
+    # nginx:
+    #     image: nginx:latest
+    #     container_name: nginx
+    #     restart: unless-stopped
+    #     ports:
+    #         - "80:80"
+    #         - "443:443"
+    #     volumes:   
+    #         - ./conf/nginx/conf.d/:/etc/nginx/conf.d/ 
+    #         - ./conf/nginx/html:/usr/share/nginx/html
+    #         - ./conf/nginx/ssl:/etc/nginx/ssl
+    #         - ./www:/var/www
+    #         - ./logs:/var/log/nginx
+    #     environment:
+    #         NGINX_HOST: localhost
+    #         NGINX_PORT: 8080
+    #     depends_on:
+    #         - php-8
+    #     networks:
+    #       - app-network 
     
     php-8:
         build: ./images/php8
@@ -49,11 +41,16 @@ services:
         ports:
           - "8000:8000"
           - "8001:8001"
+          - "8002:8002"
+          - "8005:8005"
           - "5173:5173" 
           - "5132:5132" 
+          - "5133:5133" 
         working_dir: /var/www
-        command: /bin/bash -c "/var/www/accounting/start.sh && /var/www/socialnetwork/cabinet/start.sh"
-
+        # command: /bin/bash -c "/var/www/angular-inertiajs-english/start.sh"
+        # command: /bin/bash -c "/var/www/accounting/start.sh && /var/www/socialnetwork/cabinet/start.sh"
+        # command: /bin/bash -c "/var/www/socialnetwork/cabinet/start.sh"
+        command: /bin/bash -c "/var/www/filestorage/src/start.sh && /var/www/socialnetwork/cabinet/start.sh"
             # systemctl status php8.2-fpm.service
 
     phpmyadmin:
@@ -71,9 +68,9 @@ services:
           - app-network 
 
     mysql:
-
         image: mysql:8
         restart: unless-stopped
+        container_name: mysql_container
         ports:
             - "3306:3306"
         # задаем пароль для root пользователя
@@ -81,12 +78,21 @@ services:
             # прописываем название нашего MySQL хоста
             PMA_HOST: mysql
             MYSQL_USERNAME: root
-            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_ROOT_PASSWORD: secret 
+            MYSQL_DATABASE: articles_db
         volumes:
            # - /var/lib/mysql/mysql-data-docker-php:/var/lib/mysql
             - ./mysql-data-docker-php:/var/lib/mysql 
+            - ./conf/mysql/my.cnf:/etc/mysql/my.cnf
         networks:
-          - app-network
+          - app-network 
+          - shared_network
+    redis:
+        image: redis:latest
+        container_name: redis_container
+        networks:
+          - app-network 
+          - shared_network
     #npm:
        #image: node:latest
        # volumes:
@@ -99,6 +105,10 @@ networks:
     ipam:
       config:
         - subnet: 172.25.0.0/16
+    external: false 
+  shared_network:
+    external: true    
+
 volumes:
   mysql-data:
     driver: local
