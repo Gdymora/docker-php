@@ -1,6 +1,7 @@
-mysql
+mysql/*
 logs/*.log
 mysql-data-docker-php/*
 phpdockerimages/*
 www/*
 node_modules
+docker/mysql/data

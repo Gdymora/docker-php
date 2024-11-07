@@ -64,8 +64,8 @@ sites-enabled зберігаючи блок сервера, sites-available як
 Bash into your container:
 composer create-project laravel/laravel lara10-1
 sudo chown -R ${USER}:${USER} lara10-1/
-docker exec -it php bash
-docker exec -it php8 bash
+docker exec -it php3 bash
+docker exec -it php83 bash
 
 використовувати наступні псевдоніми, щоб не заходити щоразу в контейнер:
 
@@ -74,12 +74,12 @@ alias artisan="docker-compose exec app php artisan"
 alias composer="docker-compose exec php composer"
 
 або команди
-docker exec -it php8 bash
+docker exec -it php83 bash
 composer команда
 npm command
 npm install moment
 # artisan
-docker exec -it php8 bash
+docker exec -it php83 bash
 cd example-1/
 php artisan serve --host=0.0.0.0 --port=8000
 После создания artisan 
@@ -88,4 +88,90 @@ php artisan serve --host=0.0.0.0 --port=8000
 -rw-rw-r-- выглядят как 664
 sudo chown ${USER}:${USER}
 
+# docker php
+- Якщо потрібно перевірити всі встановлені розширення:
+docker exec -it php83 php -m
+- Також можна перевірити конфігурацію GD:
+docker exec -it php83 php -i | grep -i gd
+- Перевірте статус розширень:
+docker exec -it php83 php -m
+- Перевірити статус PHP-FPM:
+docker exec -it php83 php-fpm -t
+- перевірка версії PHP та встановлених розширень:
+docker exec -it php83 php -v
+docker exec -it php83 php -i
+# Перевірка конфігурації Xdebug
+docker exec -it php83 php -i | grep xdebug
 
+Якщо ви все ще бачите помилки, можна додатково:
+- Перевірити наявність конфліктів у директорії з розширеннями:
+docker-compose exec php-83 ls -la /usr/local/lib/php/extensions/no-debug-non-zts-20230831/
+- Подивитися логи PHP:
+docker exec -it php-8 logs
+
+# docker mysql
+# Перевірка часової зони MySQL
+docker exec -it mysql_container mysql -u root -p${MYSQL_ROOT_PASSWORD} -e "SELECT @@global.time_zone, @@session.time_zone;"
+
+# Перевірка поточного часу в MySQL
+docker exec -it mysql_container mysql -u root -p${MYSQL_ROOT_PASSWORD} -e "SELECT NOW();"
+
+# docker:
+- Зупиніть всі контейнери:
+docker-compose down
+
+- Видаліть старі образи:
+docker rmi $(docker images -q)
+# Видалити всі образи примусово
+docker rmi -f $(docker images -q)
+- Очистіть кеш:
+docker builder prune -f
+
+- Перезберіть і запустіть:
+docker-compose up -d --build
+
+docker-compose logs php-83
+
+## Зупинити всі запущені контейнери:
+   docker stop $(docker ps -a -q)
+- Видалити всі контейнери:
+   docker rm $(docker ps -a -q)
+- Видалити всі образи:
+    docker rmi $(docker images -q)
+- Видалити всі volumes:
+    docker volume rm $(docker volume ls -q)
+- Видалити всі невикористані networks:
+    docker network prune -f
+
+### Очистити Docker систему (невикористані образи, контейнери, volumes і networks):
+docker system prune -a --volumes
+
+Після цього можна перевірити, що все дійсно зупинено і видалено:
+# Перевірка контейнерів
+docker ps -a
+
+# Перевірка образів
+docker images
+
+# Перевірка volumes
+docker volume ls
+
+# Перевірка networks
+docker network ls
+Якщо ви використовуєте docker-compose, можна також використати:
+docker-compose down --rmi all --volumes --remove-orphans
+
+# Відкриваємо редактор cron
+crontab -e
+
+# Додаємо рядок для щоденного бекапу о 2 годині ночі
+0 2 * * * /path/to/backup.sh
+
+# Зупиняємо контейнери
+docker-compose -f docker-compose-php83.yml down
+
+# Видаляємо дані MySQL
+sudo rm -rf docker/mysql/data/*
+
+# Перезапускаємо
+docker-compose -f docker-compose-php83.yml up -d 

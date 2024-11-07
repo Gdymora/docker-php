@@ -1,0 +1,23 @@
+[mysqld]
+
+default-time-zone 				= UTC
+
+# Required Settings
+
+character_set_server            = utf8mb4
+collation_server                = utf8mb4_0900_ai_ci
+default_authentication_plugin   = mysql_native_password
+pid-file        				= /var/run/mysqld/mysqld.pid
+socket          				= /var/run/mysqld/mysqld.sock
+datadir         				= /var/lib/mysql
+connect_timeout 				= 43200
+max_allowed_packet 				= 1024M
+net_buffer_length 				= 512M
+bind-address 					= 0.0.0.0
+
+secure-file-priv				= NULL
+
+innodb_buffer_pool_size         = 1G
+
+# Custom config should go here
+!includedir /etc/mysql/conf.d/

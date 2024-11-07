@@ -22,10 +22,10 @@ fi
 
 if [ "$1" == "h" ]; then
   echo "./start stop - stop nginx and mysql"
-  echo "./start 8 - start docker-compose-php8.yml up"
+  echo "./start 83 - start docker-compose-php83.yml up"
   echo "./start 7 - start docker-compose-php7.yml up"
-  echo "./start 8 build - start docker-compose-php8.yml up --build --remove-orphans"
-  echo "./start 8 down - docker-compose-php8.yml down"
+  echo "./start 83 build - start docker-compose-php83.yml up --build --remove-orphans"
+  echo "./start 83 down - docker-compose-php83.yml down"
   exit 0
 fi
 
