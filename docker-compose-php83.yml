@@ -14,7 +14,8 @@ services:
       PHP_IDE_CONFIG: "serverName=Docker"
       TZ: "Europe/Kiev"
     volumes:
-      - ./www:/var/www:cached
+      # - ./www:/var/www:cached
+      - ./www:/var/www:delegated
       - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
     networks:
       - app-network
@@ -25,6 +26,7 @@ services:
       - "8002:8002"
       - "8005:8005"
       - "5173:5173"
+      - "5174:5174"
       - "5132:5132"
       - "5133:5133"
     extra_hosts:
@@ -32,6 +34,8 @@ services:
     depends_on:
       - mysql
     working_dir: /var/www
+    command: /bin/bash -c "/var/www/filestorage/src/start.sh && /var/www/socialnetwork/cabinet/start.sh"
+        
 
   mysql:
     image: mysql:8.0.35
