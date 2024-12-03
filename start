@@ -40,16 +40,16 @@ fi
 php_version="$1"
 
 if [ "$2" == "build" ]; then
-  docker-compose -f "docker-compose-php$php_version.yml" up --build --remove-orphans
+  docker compose -f "docker-compose-php$php_version.yml" up --build --remove-orphans
   exit 0
 fi
 
 if [ "$2" == "down" ]; then
-  docker-compose -f "docker-compose-php$php_version.yml" down
+  docker compose -f "docker-compose-php$php_version.yml" down
   exit 0
 fi
 
 # Запускаем docker-compose для указанной версии PHP
-docker-compose -f "docker-compose-php$php_version.yml" up #--build --remove-orphans
+docker compose -f "docker-compose-php$php_version.yml" up
 # example comand
-# ./start 7 or ./start 8
+# ./start 7 or ./start 8 or ./start 83

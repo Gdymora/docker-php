@@ -6,6 +6,9 @@ services:
     build: ./images/php83
     container_name: php83
     restart: unless-stopped
+    mem_limit: "2512m"          # Максимальний обсяг пам'яті (2.512 GB)
+    cpu_quota: 50000            # 50% одного ядра (50,000 мікросекунд на 100,000)
+    cpu_period: 100000          # Період для розрахунку CPU
     environment:
       MYSQL_HOST: mysql
       MYSQL_DATABASE: ${DB_DATABASE:-myapp}
@@ -19,6 +22,7 @@ services:
       - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
     networks:
       - app-network
+      - shared_network
     ports:
       - "9000:9000"
       - "8000:8000"
@@ -34,7 +38,8 @@ services:
     depends_on:
       - mysql
     working_dir: /var/www
-    command: /bin/bash -c "/var/www/filestorage/src/start.sh && /var/www/socialnetwork/cabinet/start.sh"
+    command: /bin/bash -c "/var/www/filestorage/src/start.sh"
+    # command: /bin/bash -c "/var/www/filestorage/src/start.sh && /var/www/socialnetwork/cabinet/start.sh"
         
 
   mysql:
@@ -103,3 +108,7 @@ networks:
     external: false
   shared_network:
     external: true
+
+# docker stop aaadb040a6cd
+# docker rm -f aaadb040a6cd 
+# docker rmi 4d9be7736bed
