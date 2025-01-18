@@ -2,6 +2,32 @@
 version: '3.8'
 
 services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+        - "80:80"
+        - "443:443"
+        - "8006:8006"
+        - "1339:1339"
+        - "1338:1338"
+    volumes:   
+        - ./conf/nginx/conf.d/:/etc/nginx/conf.d/ 
+        - /etc/letsencrypt:/etc/letsencrypt:ro
+        - ./conf/nginx/html:/usr/share/nginx/html
+        - ./conf/nginx/ssl:/etc/nginx/ssl
+        - ./www:/var/www
+        - ./logs:/var/log/nginx
+    environment:
+        NGINX_HOST: localhost
+        NGINX_PORT: 8080
+    depends_on:
+        - php-8
+    networks:
+      - app-network
+      - shared_network
+
   php-8:
     build: ./images/php83
     container_name: php83
@@ -38,7 +64,7 @@ services:
     depends_on:
       - mysql
     working_dir: /var/www
-    command: /bin/bash -c "/var/www/filestorage/src/start.sh"
+    # command: /bin/bash -c "/var/www/filestorage/src/start.sh"
     # command: /bin/bash -c "/var/www/filestorage/src/start.sh && /var/www/socialnetwork/cabinet/start.sh"
         
 
