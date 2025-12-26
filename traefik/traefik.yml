@@ -18,6 +18,7 @@ providers:
     endpoint: "unix:///var/run/docker.sock"
     exposedByDefault: false
     network: web
+    apiVersion: "1.44"
 
 certificatesResolvers:
   letsencrypt:
