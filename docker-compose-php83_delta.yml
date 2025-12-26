@@ -1,0 +1,221 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: unless-stopped 
+    expose:
+      - "80"  # Внутрішній порт для Traefik
+    # ports:
+    # Залишаємо тільки внутрішні порти які потрібні для розробки
+    # - "127.0.0.1:8006:8006"  
+    # - "127.0.0.1:8007:8007"  
+    # - "127.0.0.1:1339:1339"
+    # - "127.0.0.1:1338:1338"
+    volumes:   
+      - ./conf/nginx/conf.d/:/etc/nginx/conf.d/ 
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - ./conf/nginx/html:/usr/share/nginx/html
+      - ./conf/nginx/ssl:/etc/nginx/ssl
+      - ./www:/var/www
+      - ./logs:/var/log/nginx
+    environment:
+      NGINX_HOST: localhost
+      NGINX_PORT: 80
+    # Додаємо Traefik labels
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.telegram-app.rule=Host(`destorage.jdymora.com`)"
+      - "traefik.http.routers.telegram-app.entrypoints=https"  # ДОДАНО
+      - "traefik.http.routers.telegram-app.tls=true"  # ДОДАНО
+      - "traefik.http.routers.telegram-app.tls.certresolver=letsencrypt"  # ЗМІНЕНО: cloudflare → letsencrypt
+      - "traefik.http.routers.telegram-app.service=telegram-app"
+      - "traefik.http.services.telegram-app.loadbalancer.server.port=80"
+      - "traefik.docker.network=web" 
+    depends_on:
+      - php-8
+    networks:
+      - app-network
+      - shared_network
+      - web  # Додаємо мережу Traefik
+
+  php-8:
+    build: ./images/php83
+    container_name: php83
+    restart: unless-stopped
+    # mem_limit: "2512m"
+    # cpu_quota: 50000
+    # cpu_period: 100000
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
+      MYSQL_USER: ${DB_USERNAME:-myuser}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
+      PHP_IDE_CONFIG: "serverName=Docker"
+      TZ: "Europe/Kiev"
+    volumes:
+      - ./www:/var/www:delegated
+      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
+    networks:
+      - app-network
+      - shared_network
+      - web  # Додаємо мережу Traefik
+        
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - mysql
+    working_dir: /var/www
+
+  mysql:
+    image: mysql:8.0.35
+    container_name: mysql_container
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-secret}
+      MYSQL_DATABASE: ${DB_DATABASE:-articles_db}
+      MYSQL_USER: ${DB_USERNAME:-myuser}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
+      TZ: "Europe/Kiev"
+    command:
+      - --authentication-policy=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --default-authentication-plugin=mysql_native_password
+    
+    volumes:
+      - ./docker/mysql/data:/var/lib/mysql
+      - ./docker/mysql/backups:/backups
+      - ./docker/mysql/conf.d:/etc/mysql/conf.d:ro
+    networks:
+      - app-network
+      - shared_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:latest
+    container_name: redis_container
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Kiev"
+    networks:
+      - app-network
+      - shared_network
+  
+  ai-queue-worker:
+    build: ./images/php83
+    container_name: ai-queue-worker
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
+      MYSQL_USER: ${DB_USERNAME:-myuser}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
+      TZ: "Europe/Kiev"
+      AI_GATEWAY_URL: ${AI_GATEWAY_URL:-http://ai-gateway-service:3000}
+      AI_GATEWAY_TOKEN: ${AI_GATEWAY_TOKEN:-your-ai-gateway-secret-key-2024}
+      AI_GATEWAY_TIMEOUT: ${AI_GATEWAY_TIMEOUT:-30}
+    volumes:
+      - ./www:/var/www:delegated
+      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
+    networks:
+      - app-network
+      - shared_network
+    depends_on:
+      - mysql
+      - redis
+    working_dir: /var/www/telegram-api/src
+    command: >
+      bash -c "
+        echo 'Starting AI Queue Worker...' &&
+        echo 'Testing artisan connection...' &&
+        /usr/local/bin/php artisan --version &&
+        echo 'Testing database connection...' &&
+        /usr/local/bin/php artisan migrate:status &&
+        echo 'Starting queue worker for ai-sync queue...' &&
+        /usr/local/bin/php artisan queue:work --queue=ai-sync --sleep=3 --tries=1 --max-time=3600 --memory=512 --timeout=60
+      "
+
+  telegram-posts-worker:
+    build: ./images/php83
+    container_name: telegram-posts-worker
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
+      MYSQL_USER: ${DB_USERNAME:-myuser}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
+      TZ: "Europe/Kiev"
+    volumes:
+      - ./www:/var/www:delegated
+      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
+    networks:
+      - app-network
+      - shared_network
+    depends_on:
+      - mysql
+      - redis
+    working_dir: /var/www/telegram-api/src
+    command: >
+      bash -c "
+        echo 'Starting Telegram Posts Queue Worker...' &&
+        /usr/local/bin/php artisan queue:work --queue=telegram-posts --sleep=3 --tries=3 --max-time=3600 --memory=512 --timeout=120
+      "
+
+  laravel-cron:
+    build: ./images/php83
+    container_name: laravel-cron
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
+      MYSQL_USER: ${DB_USERNAME:-myuser}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
+      TZ: "Europe/Kiev"
+      AI_GATEWAY_URL: ${AI_GATEWAY_URL:-http://ai-gateway-service:3000}
+      AI_GATEWAY_TOKEN: ${AI_GATEWAY_TOKEN:-your-ai-gateway-secret-key-2024}
+      AI_GATEWAY_TIMEOUT: ${AI_GATEWAY_TIMEOUT:-30}
+    volumes:
+      - ./www:/var/www:delegated
+      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
+    networks:
+      - app-network
+      - shared_network
+    depends_on:
+      - mysql
+      - redis
+    working_dir: /var/www/telegram-api/src
+    command: >
+      bash -c "
+        echo 'Setting up Laravel cron with AI retry...' &&
+        echo '* * * * * www-data cd /var/www/telegram-api/src && /usr/local/bin/php artisan schedule:run >> /var/www/telegram-api/src/storage/logs/cron.log 2>&1' > /etc/cron.d/laravel-cron &&
+        echo '*/30 * * * * www-data cd /var/www/telegram-api/src && /usr/local/bin/php artisan ai:retry-sync >> /var/www/telegram-api/src/storage/logs/ai-retry.log 2>&1' >> /etc/cron.d/laravel-cron &&
+        echo '0 9 * * * www-data /var/www/telegram-api/check-script/ai_gateway_daily_check.sh >> /var/www/telegram-api/src/storage/logs/ai-gateway-check.log 2>&1' >> /etc/cron.d/laravel-cron &&
+        echo '*/5 * * * * www-data cd /var/www/telegram-api/src && /usr/local/bin/php artisan queue:monitor-metrics >> /var/www/telegram-api/src/storage/logs/queue-monitor.log 2>&1' >> /etc/cron.d/laravel-cron &&
+      
+        chmod 0644 /etc/cron.d/laravel-cron &&
+        crontab /etc/cron.d/laravel-cron &&
+        touch /var/log/cron.log &&
+        touch /var/log/ai-retry.log &&
+        chmod 666 /var/log/cron.log &&
+        chmod 666 /var/log/ai-retry.log &&
+        echo 'Testing artisan...' &&
+        cd /var/www/telegram-api/src && /usr/local/bin/php artisan --version &&
+        echo 'Starting cron daemon...' &&
+        cron -f
+      "
+
+networks:
+  app-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.26.0.0/16
+    external: false
+  shared_network:
+    external: true
+  web:
+    external: true  # Додаємо зовнішню мережу Traefik

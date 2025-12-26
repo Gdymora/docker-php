@@ -1,0 +1,25 @@
+{
+  "name": "php",
+  "version": "1.0.0",
+  "description": "Установка",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gdymora/docker-php.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gdymora/docker-php/issues"
+  },
+  "homepage": "https://github.com/Gdymora/docker-php#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  }
+}

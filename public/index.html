@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сontainer Manedgment</title>
+  </head>
+  <body>
+    <h1>Сontainer Manedgment</h1>
+    <button id="startDockerButton">Запустить Docker</button>
+    <button id="ls">Test</button>
+    <div id="start"></div>
+    <div id="console"></div>
+  </body>
+  <script>
+    document.getElementById("startDockerButton").addEventListener("click", () => {
+      fetch("/start-docker")
+        .then((response) => response.text())
+        .then((data) => {
+          const logEntry = document.createElement("p");
+          logEntry.textContent = data;
+        })
+        .catch((error) => {
+          console.error(`Ошибка: ${error}`);
+        });
+    });
+
+    document.getElementById("ls").addEventListener("click", () => {
+      fetch("/ls")
+        .then((response) => response.text())
+        .then((data) => {
+          const logEntry = document.createElement("p");
+          logEntry.textContent = data;
+        })
+        .catch((error) => {
+          console.error(`Ошибка: ${error}`);
+        });
+    });
+  </script>
+  <script src="./script/ws_sock.js"></script>
+</html>

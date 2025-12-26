@@ -1,0 +1,43 @@
+
+FROM php:8.2-fpm
+# Устанавливаем переменные среды для пользователя и группы
+ARG PHP_USER_ID
+ARG PHP_GROUP_ID
+
+# Устанавливаем пользователя и группу
+RUN usermod -u ${PHP_USER_ID} www-data \
+    && groupmod -g ${PHP_GROUP_ID} www-data
+
+RUN set -eux; \
+    apt-get update; \
+    apt-get upgrade -y; \
+    apt-get install -y --no-install-recommends \
+    curl \
+    wget \
+    git \
+    libmemcached-dev \
+    libz-dev \
+    libpq-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libfreetype6-dev \
+    libssl-dev \
+    libwebp-dev \
+    libxpm-dev \
+    libmcrypt-dev \
+    libxml2-dev \
+    libonig-dev \
+    libzip-dev; \
+    docker-php-ext-install -j$(nproc) iconv mbstring mysqli pdo_mysql zip intl xml; \
+    docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/; \
+    docker-php-ext-install -j$(nproc) gd; \ 
+    docker-php-ext-enable  xml
+    #curl pdo pdo_mysql calendar ctype exif ffi fileinfo ftp gettext iconv phar posix readline shmop sockets sysvmsg sysvsem sysvshm tokenizer xml
+RUN pecl install xdebug
+RUN docker-php-ext-enable xdebug
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+ADD ./php.ini /etc/php/8.2/fpm/php.ini
+WORKDIR /var/www
+RUN chown -R www-data:www-data /var/www/
+# Запускаем контейнер
+CMD ["php-fpm"]
