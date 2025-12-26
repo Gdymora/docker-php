@@ -1,27 +1,29 @@
+
+version: '3.8'
+
 services:
   nginx:
     image: nginx:latest
     container_name: nginx
     restart: unless-stopped
     ports:
-      - "80:80"
-      - "443:443"
-      - "8006:8006"  
-      - "8007:8007"  
-      - "1339:1339"
-      - "1338:1338"
+        - "80:80"
+        - "443:443"
+        - "8006:8006"
+        - "1339:1339"
+        - "1338:1338"
     volumes:   
-      - ./conf/nginx/conf.d/:/etc/nginx/conf.d/ 
-      - /etc/letsencrypt:/etc/letsencrypt:ro
-      - ./conf/nginx/html:/usr/share/nginx/html
-      - ./conf/nginx/ssl:/etc/nginx/ssl
-      - ./www:/var/www
-      - ./logs:/var/log/nginx
+        - ./conf/nginx/conf.d/:/etc/nginx/conf.d/ 
+        - /etc/letsencrypt:/etc/letsencrypt:ro
+        - ./conf/nginx/html:/usr/share/nginx/html
+        - ./conf/nginx/ssl:/etc/nginx/ssl
+        - ./www:/var/www
+        - ./logs:/var/log/nginx
     environment:
-      NGINX_HOST: localhost
-      NGINX_PORT: 8080
+        NGINX_HOST: localhost
+        NGINX_PORT: 8080
     depends_on:
-      - php-8
+        - php-8
     networks:
       - app-network
       - shared_network
@@ -59,13 +61,12 @@ services:
       - "5133:5133"
     extra_hosts:
       - "host.docker.internal:host-gateway"
-      #- "ai-gateway:192.168.1.121" # AI_GATEWAY_URL=http://ai-gateway:3002
     depends_on:
       - mysql
     working_dir: /var/www
-      # command: /bin/bash -c "/var/www/filestorage/src/start.sh"
-      # command: /bin/bash -c "/var/www/filestorage/src/start.sh && /var/www/socialnetwork/cabinet/start.sh"
-      
+    # command: /bin/bash -c "/var/www/filestorage/src/start.sh"
+    # command: /bin/bash -c "/var/www/filestorage/src/start.sh && /var/www/socialnetwork/cabinet/start.sh"
+        
 
   mysql:
     image: mysql:8.0.35
@@ -123,174 +124,7 @@ services:
     networks:
       - app-network
       - shared_network
-  
-  # НОВИЙ сервіс для AI Queue Worker
-  ai-queue-worker:
-    build: ./images/php83
-    container_name: ai-queue-worker
-    restart: unless-stopped
-    environment:
-      MYSQL_HOST: mysql
-      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
-      MYSQL_USER: ${DB_USERNAME:-myuser}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
-      TZ: "Europe/Kiev"
-      # AI Gateway налаштування
-      AI_GATEWAY_URL: ${AI_GATEWAY_URL:-http://ai-gateway-service:3000}
-      AI_GATEWAY_TOKEN: ${AI_GATEWAY_TOKEN:-your-ai-gateway-secret-key-2024}
-      AI_GATEWAY_TIMEOUT: ${AI_GATEWAY_TIMEOUT:-30}
-    volumes:
-      - ./www:/var/www:delegated
-      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
-    networks:
-      - app-network
-      - shared_network
-    depends_on:
-      - mysql
-      - redis
-    working_dir: /var/www/telegram-api/src
-    command: >
-      bash -c "
-        echo 'Starting AI Queue Worker...' &&
-        echo 'Testing artisan connection...' &&
-        /usr/local/bin/php artisan --version &&
-        echo 'Testing database connection...' &&
-        /usr/local/bin/php artisan migrate:status &&
-        echo 'Starting queue worker for ai-sync queue...' &&
-        /usr/local/bin/php artisan queue:work --queue=ai-sync --sleep=3 --tries=1 --max-time=3600 --memory=512 --timeout=60
-      "
-        
-  telegram-posts-worker:
-    build: ./images/php83
-    container_name: telegram-posts-worker
-    restart: unless-stopped
-    environment:
-      MYSQL_HOST: mysql
-      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
-      MYSQL_USER: ${DB_USERNAME:-myuser}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
-      TZ: "Europe/Kiev"
-    volumes:
-      - ./www:/var/www:delegated
-      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
-    networks:
-      - app-network
-      - shared_network
-    depends_on:
-      - mysql
-      - redis
-    working_dir: /var/www/telegram-api/src
-    command: >
-      bash -c "
-        echo 'Starting Telegram Posts Queue Worker...' &&
-        /usr/local/bin/php artisan queue:work --queue=telegram-posts --sleep=3 --tries=3 --max-time=3600 --memory=512 --timeout=120
-      "
-  
-  # Worker для генерації статей
-  article-generation-worker:
-    build: ./images/php83
-    container_name: article-generation-worker
-    restart: unless-stopped
-    environment:
-      MYSQL_HOST: mysql
-      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
-      MYSQL_USER: ${DB_USERNAME:-myuser}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
-      TZ: "Europe/Kiev"
-      # AI Gateway + Content Parser
-      AI_GATEWAY_URL: ${AI_GATEWAY_URL:-http://ai-gateway-service:3000}
-      AI_GATEWAY_TOKEN: ${AI_GATEWAY_TOKEN:-your-ai-gateway-secret-key-2024}
-      CONTENT_PARSER_URL: ${CONTENT_PARSER_URL:-http://content-parser:8080}
-      CONTENT_PARSER_SECRET: ${CONTENT_PARSER_SECRET:-your-parser-secret}
-    volumes:
-      - ./www:/var/www:delegated
-      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
-    networks:
-      - app-network
-      - shared_network
-    depends_on:
-      - mysql
-      - redis
-    working_dir: /var/www/telegram-api/src
-    command: >
-      bash -c "
-        echo 'Starting Article Generation Queue Worker...' &&
-        /usr/local/bin/php artisan --version &&
-        echo 'Starting queue worker for article-generation...' &&
-        /usr/local/bin/php artisan queue:work database --queue=article-generation --sleep=3 --tries=3 --max-time=3600 --memory=1024 --timeout=300
-      "
 
-  # Worker для публікації статей
-  article-publishing-worker:
-    build: ./images/php83
-    container_name: article-publishing-worker
-    restart: unless-stopped
-    environment:
-      MYSQL_HOST: mysql
-      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
-      MYSQL_USER: ${DB_USERNAME:-myuser}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
-      TZ: "Europe/Kiev"
-    volumes:
-      - ./www:/var/www:delegated
-      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
-    networks:
-      - app-network
-      - shared_network
-    depends_on:
-      - mysql
-      - redis
-    working_dir: /var/www/telegram-api/src
-    command: >
-      bash -c "
-        echo 'Starting Article Publishing Queue Worker...' &&
-        /usr/local/bin/php artisan --version &&
-        echo 'Starting queue worker for article-publishing...' &&
-        /usr/local/bin/php artisan queue:work database --queue=article-publishing --sleep=3 --tries=3 --max-time=3600 --memory=512 --timeout=120
-      "
-  laravel-cron:
-    build: ./images/php83
-    container_name: laravel-cron
-    restart: unless-stopped
-    environment:
-      MYSQL_HOST: mysql
-      MYSQL_DATABASE: ${DB_DATABASE:-myapp}
-      MYSQL_USER: ${DB_USERNAME:-myuser}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-mypassword}
-      TZ: "Europe/Kiev"
-      # Додайте ваші AI змінні
-      AI_GATEWAY_URL: ${AI_GATEWAY_URL:-http://ai-gateway-service:3000}
-      AI_GATEWAY_TOKEN: ${AI_GATEWAY_TOKEN:-your-ai-gateway-secret-key-2024}
-      AI_GATEWAY_TIMEOUT: ${AI_GATEWAY_TIMEOUT:-30}
-    volumes:
-      - ./www:/var/www:delegated
-      - ./images/php83/php.ini:/usr/local/etc/php/conf.d/docker-fpm.ini:ro
-    networks:
-      - app-network
-      - shared_network
-    depends_on:
-      - mysql
-      - redis
-    working_dir: /var/www/telegram-api/src
-    command: >
-      bash -c "
-        echo 'Setting up Laravel cron with AI retry...' &&
-        echo '* * * * * www-data cd /var/www/telegram-api/src && /usr/local/bin/php artisan schedule:run >> /var/www/telegram-api/src/storage/logs/cron.log 2>&1' > /etc/cron.d/laravel-cron &&
-        echo '*/30 * * * * www-data cd /var/www/telegram-api/src && /usr/local/bin/php artisan ai:retry-sync >> /var/www/telegram-api/src/storage/logs/ai-retry.log 2>&1' >> /etc/cron.d/laravel-cron &&
-        echo '0 9 * * * www-data /var/www/telegram-api/check-script/ai_gateway_daily_check.sh >> /var/www/telegram-api/src/storage/logs/ai-gateway-check.log 2>&1' >> /etc/cron.d/laravel-cron &&
-        echo '*/5 * * * * www-data cd /var/www/telegram-api/src && /usr/local/bin/php artisan queue:monitor-metrics >> /var/www/telegram-api/src/storage/logs/queue-monitor.log 2>&1' >> /etc/cron.d/laravel-cron &&
-       
-        chmod 0644 /etc/cron.d/laravel-cron &&
-        crontab /etc/cron.d/laravel-cron &&
-        touch /var/log/cron.log &&
-        touch /var/log/ai-retry.log &&
-        chmod 666 /var/log/cron.log &&
-        chmod 666 /var/log/ai-retry.log &&
-        echo 'Testing artisan...' &&
-        cd /var/www/telegram-api/src && /usr/local/bin/php artisan --version &&
-        echo 'Starting cron daemon...' &&
-        cron -f
-      "
 networks:
   app-network:
     driver: bridge

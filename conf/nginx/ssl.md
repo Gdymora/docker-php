@@ -2,28 +2,28 @@
 
 Спочатку створіть директорії (запустіть з правами root або sudo):
 
-sudo mkdir -p conf/nginx/ssl
+bashCopysudo mkdir -p conf/nginx/ssl
 sudo chmod 755 conf/nginx/ssl
 
 Перейдіть у директорію:
 
-cd conf/nginx/ssl
+bashCopycd conf/nginx/ssl
 
-# Згенеруйте сертифікати якщо без dns:
+Згенеруйте сертифікати:
 
-sudo openssl genrsa -out private.key 2048
+bashCopysudo openssl genrsa -out private.key 2048
 sudo openssl req -new -x509 -key private.key -out certificate.crt -days 365 \
 -subj "/CN=91.211.121.216" \
 -addext "subjectAltName=IP:91.211.121.216"
 
 Встановіть правильні права:
 
-sudo chmod 644 certificate.crt
+bashCopysudo chmod 644 certificate.crt
 sudo chmod 600 private.key
 
 Перевірте що файли створені:
 
-ls -la
+bashCopyls -la
 
 
 # Встановлення certbot
@@ -42,13 +42,12 @@ sudo apt install certbot
 
 Зупиніть nginx перед отриманням сертифіката:
 
-sudo systemctl stop nginx
+bashCopysudo systemctl stop nginx
 
 # або якщо в докері
 docker-compose stop nginx
 
 Запустіть команду:
-
 ## повинен бути доступ зовні на 80 порту
 sudo certbot certonly --standalone -d storage.jdymora.com
 Після успішного виконання сертифікати будуть збережені в:

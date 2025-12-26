@@ -18,10 +18,16 @@ add site
 # Журнали сервера
 /var/log/nginx/access.log: кожен запит до вашого веб-сервера записується в цей файл журналу, якщо Nginx не налаштовано на інше.
 /var/log/nginx/error.log: будь-які помилки Nginx будуть записані в цей журнал.
-
+ 
 # налаштування сертифікатів
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 -keyout conf/nginx/ssl/private.key \
 -out conf/nginx/ssl/certificate.crt \
 -subj "/CN=63.177.161.147" \
 -addext "subjectAltName=IP:63.177.161.147"
+=======
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+-keyout conf/nginx/ssl/private.key \
+-out conf/nginx/ssl/certificate.crt \
+-subj "/CN=91.211.121.216" \
+-addext "subjectAltName=IP:91.211.121.216" 

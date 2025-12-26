@@ -42,9 +42,14 @@ sudo find filestorage -type f -exec chmod 664 {} \;
 sudo usermod -a -G www-data $USER
 sudo chmod -R 777 filestorage/src/storage
 sudo chmod -R 777 filestorage/src/public
+<<<<<<< HEAD
 sudo chmod -R 777 filestorage/src/storage/app/telegram/sessions
 ```
 docker exec php83 php /var/www/telegram-api/src/artisan config:clear
 docker exec php83 php /var/www/telegram-api/src/artisan cache:clear  
 docker exec php83 php /var/www/telegram-api/src/artisan route:clear
 docker exec php83 php /var/www/telegram-api/src/artisan view:clear
+=======
+sudo chmod -R 777 storage/app/telegram/sessions
+```
+>>>>>>> 8225a4761c8a55ba210f9605f40e93ad000add86

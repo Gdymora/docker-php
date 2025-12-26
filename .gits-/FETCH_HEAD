@@ -1,0 +1,6 @@
+0851a3bd8a284912d267850b601707159273bc23	not-for-merge	branch 'dependabot/composer/www/itea-curs/guzzlehttp/guzzle-6.5.8' of github.com:Gdymora/docker-php
+e9c615b87de74eb2ced89c8802b4fb1a9e47d1ea	not-for-merge	branch 'dependabot/composer/www/itea-curs/guzzlehttp/psr7-1.8.5' of github.com:Gdymora/docker-php
+31b4870bfcfa208a8aabc0c1b87fcff5a7ba40d8	not-for-merge	branch 'dependabot/composer/www/itea-curs/laravel/framework-7.30.4' of github.com:Gdymora/docker-php
+9fd70e064fedde3e3380bb34ef50747525aa8604	not-for-merge	branch 'dependabot/composer/www/itea-curs/league/flysystem-1.1.4' of github.com:Gdymora/docker-php
+e74cdb4a8e2adf8aa3e84658a9301a30527b9618	not-for-merge	branch 'dependabot/composer/www/itea-curs/symfony/http-kernel-5.4.20' of github.com:Gdymora/docker-php
+d295d64949ab1003c6437cbed2707fec2cb7dddc	not-for-merge	branch 'master' of github.com:Gdymora/docker-php
