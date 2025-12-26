@@ -4,7 +4,9 @@ services:
     container_name: traefik
     restart: unless-stopped
     security_opt:
-      - no-new-privileges:true 
+      - no-new-privileges:true
+    environment:
+      - DOCKER_API_VERSION=1.44 
     ports:
       - "80:80"
       - "443:443"
