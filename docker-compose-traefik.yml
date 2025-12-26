@@ -18,7 +18,7 @@ services:
     labels:
       - "traefik.enable=true"
       # Dashboard (опціонально)
-      - "traefik.http.routers.dashboard.rule=Host(`traefik.crumpel.site`)"
+      - "traefik.http.routers.dashboard.rule=Host(`destorage.jdymora.com`)"
       - "traefik.http.routers.dashboard.entrypoints=https"
       - "traefik.http.routers.dashboard.tls.certresolver=letsencrypt"
       - "traefik.http.routers.dashboard.service=api@internal"
