@@ -22,7 +22,7 @@ providers:
 certificatesResolvers:
   letsencrypt:
     acme:
-      email: your-real-email@gmail.com  # ЗАМІНЬ на свій реальний email
+      email: mahapetrofa95@gmail.com  # ЗАМІНЬ на свій реальний email
       storage: acme.json
       httpChallenge:
         entryPoint: http
