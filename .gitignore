@@ -6,3 +6,4 @@ www/*
 node_modules
 docker/mysql/data
 conf/nginx/ssl/*
+traefik/acme.json
